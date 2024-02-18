@@ -12,7 +12,7 @@ export default function Paragraph({ value }) {
 
   return (
     <p
-      className="text-4xl py-10 leading-snug max-w-full uppercase flex flex-wrap font-overusedBold"
+      className="text-4xl pb-10 leading-snug max-w-full uppercase flex flex-wrap font-overusedBold"
       ref={element}
     >
       <div className="w-52" />

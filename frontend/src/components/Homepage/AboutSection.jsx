@@ -1,4 +1,4 @@
-import AboutImgSection from "@/assets/aboutSectionHomePG.jpg";
+import Harmony from "@/assets/harmony.jpg";
 import { motion, useScroll, useTransform, cubicBezier } from "framer-motion";
 import { useRef } from "react";
 import Paragraph from "@/components/Homepage/AboutParagraph";
@@ -13,45 +13,46 @@ export default function AboutSection() {
     offset: ["start end", "end start"],
   });
 
-  let Harmonyx = useTransform(scrollYProgress, [0.1, 0.75], ["160%", "70%"], {
+  let Harmonyx = useTransform(scrollYProgress, [0.1, 0.5], ["160%", "70%"], {
     ease: cubicBezier(0.33, 1, 0.68, 1),
   });
-  let Inx = useTransform(scrollYProgress, [0.2, 0.75], ["-100%", "-20%"], {
+  let Inx = useTransform(scrollYProgress, [0.2, 0.5], ["-100%", "-20%"], {
     ease: cubicBezier(0.33, 1, 0.68, 1),
   });
-  let Designx = useTransform(scrollYProgress, [0.3, 0.75], ["100%", "40%"], {
+  let Designx = useTransform(scrollYProgress, [0.3, 0.5], ["130%", "40%"], {
     ease: cubicBezier(0.33, 1, 0.68, 1),
   });
+  let opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <div ref={ref} className="flex flex-col gap-5 px-10">
+    <section ref={ref} className="flex flex-col gap-5 px-10">
       <div className="flex flex-col gap-3 py-20 items-center text-8xl font-overusedBold uppercase">
         <motion.div
-          style={{ x: Harmonyx }}
+          style={{ x: Harmonyx, opacity }}
           className="font-overusedsemiboldItalic text-6xl"
         >
           Harmony
         </motion.div>
         <motion.div
-          style={{ x: Inx }}
+          style={{ x: Inx, opacity }}
           className="flex flex-row items-center gap-5"
         >
           <span>in</span>
           <div className="w-52 h-20 overflow-hidden">
             <img
-              src={AboutImgSection}
+              src={Harmony}
               className="w-full h-full object-cover object-center"
             ></img>
           </div>
         </motion.div>
-        <motion.div style={{ x: Designx }}>Design</motion.div>
+        <motion.div style={{ x: Designx, opacity }}>Design</motion.div>
       </div>
       <div className="w-full relative">
-        <span className="absolute left-1 top-12 text-sm uppercase text-purple-950 font-overusedMedium">
+        <span className="absolute left-1 top-3 text-sm uppercase text-purple-950 font-overusedMedium">
           nebula studio
         </span>
         <Paragraph value={aboutPvalue} />
       </div>
-    </div>
+    </section>
   );
 }

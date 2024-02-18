@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import AboutSection from "@/components/Homepage/AboutSection";
+import GetInTouch from "@/components/Homepage/GetInTouch";
 
 function App() {
   let Heroref = useRef(null);
@@ -13,7 +14,6 @@ function App() {
   });
 
   let y = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
-
 
   return (
     <Layout>
@@ -51,7 +51,10 @@ function App() {
       </div>
       {/* About Section */}
       <AboutSection />
-      <div className="h-screen"></div>
+      {/* Projects section */}
+      <div className="h-screen mt-10 bg-foreground"></div>
+      {/* Get in touch section*/}
+      <GetInTouch />
     </Layout>
   );
 }
