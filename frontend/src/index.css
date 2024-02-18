@@ -4,8 +4,8 @@
  
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 20 14.3% 4.1%;
+    --background: 255 36.4% 95%;
+    --foreground: 274 86.9% 21%;
 
     --card: 0 0% 100%;
     --card-foreground: 20 14.3% 4.1%;
@@ -89,6 +89,26 @@
 @font-face {
   font-family: "OverusedItalic";
   src: local("OverusedGrotesk-Italic"), url("./fonts/OverusedGrotesk-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OverusedRoman";
+  src: local("OverusedGrotesk-Roman"), url("./fonts/OverusedGrotesk-Roman.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OverusedBook";
+  src: local("OverusedGrotesk-Book"), url("./fonts/OverusedGrotesk-Book.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "OverusedBlack";
+  src: local("OverusedGrotesk-Black"), url("./fonts/OverusedGrotesk-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OverusedSemiBoldItalic";
+  src: local("OverusedGrotesk-SemiBoldItalic"), url("./fonts/OverusedGrotesk-SemiBoldItalic.ttf") format("truetype");
 }
 
 @layer base {

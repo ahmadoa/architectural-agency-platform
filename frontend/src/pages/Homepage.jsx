@@ -3,14 +3,17 @@ import HeroIMG from "@/assets/HeroImg.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import AboutSection from "@/components/Homepage/AboutSection";
 
 function App() {
-  let ref = useRef(null);
+  let Heroref = useRef(null);
   let { scrollYProgress } = useScroll({
-    target: ref,
+    target: Heroref,
     offset: ["start end", "end start"],
   });
+
   let y = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
+
 
   return (
     <Layout>
@@ -29,7 +32,7 @@ function App() {
         <div className="self-end font-overusedLight">TANGIER, MOROCCO</div>
       </section>
       <div
-        ref={ref}
+        ref={Heroref}
         className="h-screen relative overflow-hidden shadow-innerLG"
       >
         <motion.img
@@ -46,7 +49,9 @@ function App() {
           <FaQuoteRight className="self-end text-xl" />
         </div>
       </div>
-      <div className="h-screen bg-muted-foreground/40"></div>
+      {/* About Section */}
+      <AboutSection />
+      <div className="h-screen"></div>
     </Layout>
   );
 }
