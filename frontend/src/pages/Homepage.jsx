@@ -31,10 +31,7 @@ function App() {
         </div>
         <div className="self-end font-overusedLight">TANGIER, MOROCCO</div>
       </section>
-      <div
-        ref={Heroref}
-        className="h-screen relative overflow-hidden shadow-innerLG"
-      >
+      <div ref={Heroref} className="h-screen relative overflow-hidden">
         <motion.img
           style={{ y }}
           src={HeroIMG}
