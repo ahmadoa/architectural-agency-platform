@@ -1,6 +1,6 @@
 import Layout from "@/layout";
-import HeroIMG from "@/assets/HeroImg.jpg";
-import { motion, useScroll, useTransform } from "framer-motion";
+import HeroIMG from "@/assets/HeroImg.svg";
+import { motion, useScroll, useTransform, cubicBezier } from "framer-motion";
 import { useRef } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import AboutSection from "@/components/Homepage/AboutSection";
@@ -22,17 +22,46 @@ function App() {
         id="Hero"
         className="w-full h-120 flex flex-col justify-end py-5 px-10"
       >
-        <div className="w-full flex flex-row items-center justify-between text-4xl sm:text-7xl md:text-8xl lg:text-10xl">
-          <div className="font-overusedBold">NEBULA</div>
-          <div className="self-end font-overusedMedium text-muted-foreground">
-            STUDIO
-          </div>
-          <div className="self-center w-8 h-8 bg-muted-foreground rounded-full" />
+        <div className="overflow-hidden w-full">
+          <motion.div
+            initial={{ y: "100%" }}
+            whileInView={{ y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
+            className=" flex flex-row items-center justify-between text-4xl sm:text-7xl md:text-8xl lg:text-10xl"
+          >
+            <div className="font-overusedBold">NEBULA</div>
+            <div className="self-end font-overusedMedium text-muted-foreground">
+              STUDIO
+            </div>
+            <div className="self-center w-8 h-8 bg-muted-foreground rounded-full" />
+          </motion.div>
         </div>
-        <div className="self-end font-overusedLight">TANGIER, MOROCCO</div>
+
+        <div className="self-end overflow-hidden">
+          <motion.div
+            initial={{ y: "100%" }}
+            whileInView={{ y: 0 }}
+            transition={{ delay: 1, ease: "easeOut" }}
+          >
+            <div className="self-end font-overusedLight">TANGIER, MOROCCO</div>
+          </motion.div>
+        </div>
       </section>
       <div ref={Heroref} className="h-screen relative overflow-hidden">
         <motion.img
+          initial={{
+            opacity: 0,
+            clipPath: "polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%)",
+          }}
+          animate={{
+            opacity: 1,
+            clipPath: "polygon(0% 0%, 100% 0, 100% 100%, 0% 100%)",
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 1.3,
+            ease: cubicBezier(0.83, 0, 0.17, 1),
+          }}
           style={{ y }}
           src={HeroIMG}
           className="h-full w-full scale-110 object-cover object-center"
