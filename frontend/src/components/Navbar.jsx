@@ -10,7 +10,7 @@ export default function Navbar() {
           <motion.div
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
-            transition={{ delay: 1.7, ease: "easeOut" }}
+            transition={{ delay: 1.8, ease: "easeOut" }}
             className="flex items-center text-sm font-overusedRegular"
           >
             <img src={Logo} className="w-5" />
@@ -20,7 +20,7 @@ export default function Navbar() {
           <motion.div
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
-            transition={{ delay: 1.8, ease: "easeOut" }}
+            transition={{ delay: 1.9, ease: "easeOut" }}
             className="flex items-center text-sm font-overusedRegular"
           >
             EST
@@ -32,7 +32,7 @@ export default function Navbar() {
           className="flex items-center gap-3 text-sm font-overusedRegular"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.3, delay: 1.8 }}
+          transition={{ duration: 0.3, delay: 1.7 }}
         >
           <Link to="/" className="overflow-hidden">
             <motion.div
@@ -84,7 +84,7 @@ export default function Navbar() {
         }}
         transition={{
           duration: 1,
-          delay: 1.4,
+          delay: 1.6,
           ease: "easeIn",
         }}
       ></motion.div>
