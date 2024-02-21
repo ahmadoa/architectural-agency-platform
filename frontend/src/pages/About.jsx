@@ -1,8 +1,9 @@
 import Layout from "@/layout";
 import AboutIMG from "@/assets/About.svg";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { cubicBezier, motion, useScroll } from "framer-motion";
 import Paragraph from "@/components/Aboutpage/AboutParagraph";
+import TeamValues from "@/components/Aboutpage/TeamValues";
 
 const textAbout =
   "norea est un écosystème spécialisé dans les métiers de l’immobilier responsable.Du conseil aux travaux, son panel d’expertises développé et enrichi depuis plus de 25 ans en fait aujourd’hui un acteur significatif dans son lieu d’ancrage, Paris et l’Île-de-France. Forte du talent de ses équipes et enthousiaste face à ses nouvelles perspectives de développement en 2024 et 2025, norea cultive un équilibre stratégique entre audace, pragmatisme et durabilité.";
@@ -62,6 +63,7 @@ export default function About() {
         </motion.div>
 
         {/* insights & values */}
+        {/*
         <section
           ref={parentElement}
           className="sticky-0 h-screen flex items-center w-full bg-foreground overflow-hidden"
@@ -70,8 +72,10 @@ export default function About() {
             <Paragraph value={textAbout} scrollYProgress={scrollYProgress} />
           </div>
         </section>
+        */}
 
-        {/* pre-team section */}
+        {/* team values section */}
+        <TeamValues />
         <div className="h-screen"></div>
       </div>
     </Layout>

@@ -58,7 +58,7 @@ function App() {
             clipPath: "polygon(0% 0%, 100% 0, 100% 100%, 0% 100%)",
           }}
           transition={{
-            duration: 0.8,
+            duration: 0.9,
             delay: 1.3,
             ease: cubicBezier(0.83, 0, 0.17, 1),
           }}
