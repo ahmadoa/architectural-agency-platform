@@ -1,13 +1,17 @@
 const express = require("express");
 const client = require("./sanity");
+const cors = require("cors");
 
 const app = express();
+
+app.use(express.json());
+app.use(cors());
 
 // get projects from sanity
 app.get("/api/projects", async (req, res) => {
   try {
-    const projects = await client.fetch(`*[_type == "project"]`);
-    res.json(projects);
+    const projects = await client.fetch(`*[_type == "projects"]`);
+    res.json({ projects });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: error.message });
@@ -48,7 +52,8 @@ app.get("/api/random-projects", async (req, res) => {
 // get team members
 app.get("/api/team", async (req, res) => {
   try {
-    const team = await client.fetch(`*[_type == "team"]`);
+    const query = `*[_type == "team"]{_id,_createdAt,name,role, "imgURL": Image.asset->url}|order(_createdAt desc)`;
+    const team = await client.fetch(query);
     res.json(team);
   } catch (error) {
     console.error(error);
@@ -67,6 +72,6 @@ app.get("/api/services", async (req, res) => {
   }
 });
 
-app.listen(3001, () => {
-  console.log("Server listening on port 3001");
+app.listen(3000, () => {
+  console.log("Server listening on port 3000");
 });

@@ -36,7 +36,7 @@ const Word = ({ children, range, progress }) => {
   const step = amount / children.length;
 
   return (
-    <span className="relative px-1 text-muted-foreground">
+    <span className="relative px-1 text-foreground">
       {characters.map((character, i) => {
         const start = range[0] + i * step;
         const end = range[0] + step * (i + 1);

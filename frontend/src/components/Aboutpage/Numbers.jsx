@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
-export default function Numbers() {
+export default function Numbers({ theme, setTheme }) {
   const parentRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: parentRef,
@@ -9,11 +9,11 @@ export default function Numbers() {
   });
 
   const title_y = useTransform(scrollYProgress, [0, 1], ["5%", "-5%"]);
-  const row_1_y = useTransform(scrollYProgress, [0, 1], ["-5%", "10%"]);
+  const row_1_y = useTransform(scrollYProgress, [0, 1], ["-5%", "7%"]);
   const row_2_y = useTransform(scrollYProgress, [0, 1], ["5%", "-10%"]);
 
   return (
-    <div
+    <section
       ref={parentRef}
       className="w-full bg-foreground px-10 py-24 flex flex-row"
     >
@@ -72,6 +72,6 @@ export default function Numbers() {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }

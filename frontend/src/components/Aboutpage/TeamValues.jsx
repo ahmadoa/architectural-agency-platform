@@ -14,7 +14,7 @@ export default function TeamValues() {
   let righty = useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]);
 
   return (
-    <div
+    <section
       ref={parentRef}
       className="px-10 py-20 flex flex-row justify-between relative"
     >
@@ -98,6 +98,6 @@ export default function TeamValues() {
         <div className="w-56 h-28 rounded-t-full bg-purple-300/10"></div>
         <div className="w-56 h-28 rounded-t-full bg-purple-300/10"></div>
       </div>
-    </div>
+    </section>
   );
 }
