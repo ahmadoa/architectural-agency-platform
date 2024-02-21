@@ -25,7 +25,7 @@ export default function Navbar() {
           >
             EST
             <span className="w-2 h-[2px] bg-primary" />
-            <span className="font-bold">2021</span>
+            <span className="font-bold">2012</span>
           </motion.div>
         </motion.div>
         <motion.div
