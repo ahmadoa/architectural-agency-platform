@@ -5,6 +5,8 @@ import { useRef } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import AboutSection from "@/components/Homepage/AboutSection";
 import GetInTouch from "@/components/Homepage/GetInTouch";
+import Extended from "@/components/Homepage/ExtendedAbout";
+import Offering from "@/components/Homepage/Offering";
 
 function App() {
   let Heroref = useRef(null);
@@ -66,6 +68,7 @@ function App() {
           src={HeroIMG}
           className="h-full w-full scale-110 object-cover object-center"
         ></motion.img>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/20" />
         <div className="absolute w-1/6 flex flex-col gap-3 left-10 bottom-10 text-secondary">
           <FaQuoteLeft className="text-xl" />
           <p className="text-sm font-overusedItalic">
@@ -79,6 +82,9 @@ function App() {
       <AboutSection />
       {/* Projects section */}
       <div className="h-screen mt-10 bg-foreground"></div>
+      {/* About section continuation */}
+      <Extended />
+      <Offering />
       {/* Get in touch section*/}
       <GetInTouch />
     </Layout>

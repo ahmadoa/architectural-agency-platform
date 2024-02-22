@@ -4,7 +4,7 @@ import { useRef } from "react";
 import Paragraph from "@/components/Homepage/AboutParagraph";
 
 const aboutPvalue =
-  "a culmination of decades of experience by our world-class team, we envision shaping spaces that inspire & empower, fostering connections between people & their environment. Through thoughtful design & collaboration.";
+  "a culmination of a decade of experience by our world-class team, we envision shaping spaces that inspire & empower, fostering connections between people & their environment. Through thoughtful design & collaboration.";
 
 export default function AboutSection() {
   let ref = useRef(null);

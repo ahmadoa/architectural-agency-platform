@@ -56,6 +56,7 @@ export default function About() {
             </div>
           </div>
         </motion.div>
+        {/* */}
         {/* team values section */}
         <TeamValues />
         {/* in numbers */}
