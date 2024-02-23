@@ -5,14 +5,12 @@ import { cubicBezier, motion, useScroll } from "framer-motion";
 import TeamValues from "@/components/Aboutpage/TeamValues";
 import Numbers from "@/components/Aboutpage/Numbers";
 import Team from "@/components/Aboutpage/Team";
-import GetInTouch from "@/components/Homepage/GetInTouch";
+import GetInTouch from "@/components/GetInTouch";
 
 export default function About() {
-  const [theme, setTheme] = useState("light");
-
   return (
     <Layout>
-      <div className={`w-full flex flex-col ${theme}`}>
+      <div className={`w-full flex flex-col`}>
         {/* hero */}
         <motion.div className="h-screen w-full flex relative flex-row">
           <motion.img
@@ -63,7 +61,6 @@ export default function About() {
         <Numbers />
         {/* team */}
         <Team />
-        <GetInTouch />
       </div>
     </Layout>
   );

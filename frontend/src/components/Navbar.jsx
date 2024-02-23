@@ -70,6 +70,30 @@ export default function Navbar() {
               <span className="absolute transition-all duration-500 ease-in-out group-hover:right-0 h-[1px] left-0 right-full bottom-[2px] bg-primary"></span>
             </motion.div>
           </Link>
+          <span>/</span>
+          <Link to="/projects" className="overflow-hidden">
+            <motion.div
+              className="relative group"
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              transition={{ delay: 2.3, ease: "easeOut" }}
+            >
+              PROJECTS
+              <span className="absolute transition-all duration-500 ease-in-out group-hover:right-0 h-[1px] left-0 right-full bottom-[2px] bg-primary"></span>
+            </motion.div>
+          </Link>
+          <span>/</span>
+          <Link to="/contact" className="overflow-hidden">
+            <motion.div
+              className="relative group"
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              transition={{ delay: 2.3, ease: "easeOut" }}
+            >
+              CONTACT
+              <span className="absolute transition-all duration-500 ease-in-out group-hover:right-0 h-[1px] left-0 right-full bottom-[2px] bg-primary"></span>
+            </motion.div>
+          </Link>
         </motion.div>
       </div>
       <motion.div

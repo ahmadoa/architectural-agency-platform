@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform, cubicBezier } from "framer-motion";
 import { useRef } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import AboutSection from "@/components/Homepage/AboutSection";
-import GetInTouch from "@/components/Homepage/GetInTouch";
+import GetInTouch from "@/components/GetInTouch";
 import Extended from "@/components/Homepage/ExtendedAbout";
 import Offering from "@/components/Homepage/Offering";
 
@@ -85,8 +85,6 @@ function App() {
       {/* About section continuation */}
       <Extended />
       <Offering />
-      {/* Get in touch section*/}
-      <GetInTouch />
     </Layout>
   );
 }
