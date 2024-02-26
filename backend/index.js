@@ -56,7 +56,7 @@ app.get("/api/singleProject/:id", async (req, res) => {
 app.get("/api/random-projects", async (req, res) => {
   try {
     const projects = await client.fetch(
-      `*[_type == "project"] | order(_createdAt desc) [0...3] { _id, name, heroImage }`
+      `*[_type == "project"] | order(_createdAt desc) [0...3] { _id, name,projectCategory, "heroImgURL": heroImage.asset->url, }`
     );
     res.json(projects);
   } catch (error) {

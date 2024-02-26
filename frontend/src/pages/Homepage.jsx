@@ -7,6 +7,7 @@ import AboutSection from "@/components/Homepage/AboutSection";
 import GetInTouch from "@/components/GetInTouch";
 import Extended from "@/components/Homepage/ExtendedAbout";
 import Offering from "@/components/Homepage/Offering";
+import LatestProjects from "@/components/Homepage/LatestProjects";
 
 function App() {
   let Heroref = useRef(null);
@@ -81,7 +82,7 @@ function App() {
       {/* About Section */}
       <AboutSection />
       {/* Projects section */}
-      <div className="h-screen mt-10 bg-foreground"></div>
+      <LatestProjects />
       {/* About section continuation */}
       <Extended />
       <Offering />

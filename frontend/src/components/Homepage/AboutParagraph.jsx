@@ -11,7 +11,7 @@ export default function Paragraph({ value }) {
   const words = value.split(" ");
 
   return (
-    <p
+    <div
       className="text-4xl pb-10 leading-snug max-w-full uppercase flex flex-wrap font-overusedBold"
       ref={element}
     >
@@ -26,7 +26,7 @@ export default function Paragraph({ value }) {
           </Word>
         );
       })}
-    </p>
+    </div>
   );
 }
 

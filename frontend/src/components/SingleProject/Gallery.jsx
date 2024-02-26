@@ -1,4 +1,4 @@
-import useDimension from "../../../hooks/useDimension";
+import useDimension from "@/hooks/useDimension";
 import { useTransform, useScroll, motion } from "framer-motion";
 import { useRef } from "react";
 
