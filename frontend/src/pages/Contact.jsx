@@ -4,8 +4,13 @@ import { Textarea } from "@/components/ui/textarea";
 import arrow from "@/assets/arrow.svg";
 import Layout from "@/layout";
 import { motion } from "framer-motion";
+import { useLayoutEffect } from "react";
 
 export default function Contact() {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
   return (
     <Layout>
       <div className=" flex flex-col px-10">

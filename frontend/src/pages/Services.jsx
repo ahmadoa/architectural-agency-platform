@@ -3,8 +3,12 @@ import ServicesHero from "@/assets/ServicesHero.svg";
 import { cubicBezier, motion } from "framer-motion";
 import Process from "@/components/Servicespage/Process";
 import Offers from "@/components/Servicespage/Offers";
+import { useLayoutEffect } from "react";
 
 export default function Services() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <Layout>
       <div className={`w-full flex flex-col`}>

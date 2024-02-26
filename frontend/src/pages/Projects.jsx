@@ -2,7 +2,7 @@ import Project from "@/components/Projectspage/project";
 import Layout from "@/layout";
 import axios from "axios";
 import { useScroll, useTransform, motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useLayoutEffect } from "react";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
@@ -40,6 +40,10 @@ export default function Projects() {
 
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.5]);
   const y = useTransform(scrollYProgress, [0, 0.5], ["-10%", "40%"]);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <Layout>
