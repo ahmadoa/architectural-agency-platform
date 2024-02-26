@@ -120,7 +120,6 @@
   }
 }
 
-
 .AfterIMG::after {
   @apply absolute w-full h-full top-0 right-0 bg-background;
 }

@@ -7,11 +7,16 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// get projects from sanity
+// get all projects from sanity
 app.get("/api/projects", async (req, res) => {
   try {
-    const projects = await client.fetch(`*[_type == "projects"]`);
-    res.json({ projects });
+    const projects = await client.fetch(`*[_type == "project"]{
+        name,
+        projectCategory,
+        "imgURL": heroImage.asset->url,
+        _id,
+      }|order(_createdAt desc)`);
+    res.json(projects);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: error.message });
@@ -24,7 +29,19 @@ app.get("/api/projects/:id", async (req, res) => {
 
   try {
     const project = await client.fetch(
-      `*[_type == "project" && _id == $id][0]`,
+      `*[_type == "project" && _id == $id][0]{
+        name,
+        about,
+        leaddesigner,
+        location,
+        projectCategory,
+        totalLandSize,
+        status,
+        "imgURL": Image.asset->url,
+        images => [
+          ...,
+          imgURL: image.asset->url,
+        ],`,
       {
         id,
       }

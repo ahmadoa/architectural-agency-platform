@@ -5,6 +5,7 @@ import "./index.css";
 import Homepage from "@/pages/Homepage.jsx";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
+import Projects from "@/pages/Projects";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </Router>
   </React.StrictMode>
