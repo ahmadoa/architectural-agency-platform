@@ -17,11 +17,7 @@ export default function Project(props) {
 
   return (
     <div ref={innerRef} className="h-[90vh] w-full" style={styles}>
-      <Link
-        to={`/projects/${props.name}`}
-        state={{ id: props._id }}
-        className="flex flex-col h-full"
-      >
+      <Link to={`/projects/${props._id}`} className="flex flex-col h-full">
         <div className="h-full w-full relative shadow-xl overflow-hidden">
           <motion.img
             style={{ scale: img_scale }}
