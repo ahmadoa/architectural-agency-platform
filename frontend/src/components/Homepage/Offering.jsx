@@ -73,7 +73,7 @@ export default function Offering() {
                   Services
                 </span>
                 <span className="text-xl absolute translate-y-20 group-hover:-translate-y-0 transition-all duration-500 font-overusedMedium uppercase">
-                  services
+                  Services
                 </span>
               </div>
               <span className="absolute transition-all duration-500 ease-in-out group-hover:right-0 h-[1px] left-0 right-full -bottom-0 bg-primary-foreground"></span>

@@ -6,7 +6,8 @@ import Homepage from "@/pages/Homepage.jsx";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Projects from "@/pages/Projects";
-import SingleProject from "./pages/SingleProject";
+import SingleProject from "@/pages/SingleProject";
+import Contact from "@/pages/Contact";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/services" element={<Services />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<SingleProject />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   </React.StrictMode>
