@@ -24,12 +24,13 @@ app.get("/api/projects", async (req, res) => {
 });
 
 // get project by id
-app.get("/api/projects/:id", async (req, res) => {
+app.get("/api/singleProject/:id", async (req, res) => {
   const { id } = req.params;
+  console.log(id);
 
   try {
     const project = await client.fetch(
-      `*[_type == "project" && _id == $id][0]{
+      `*[_type == "project" && _id == $id]{
         name,
         about,
         leaddesigner,
@@ -37,11 +38,9 @@ app.get("/api/projects/:id", async (req, res) => {
         projectCategory,
         totalLandSize,
         status,
-        "imgURL": Image.asset->url,
-        images => [
-          ...,
-          imgURL: image.asset->url,
-        ],`,
+        "heroImgURL": heroImage.asset->url,
+        "imgURL": images[].asset->url,
+      }`,
       {
         id,
       }
