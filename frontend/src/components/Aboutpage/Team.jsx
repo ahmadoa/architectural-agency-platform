@@ -14,7 +14,7 @@ export default function Team() {
 
   const getTeam = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/team");
+      const response = await axios.get("https://nebula-backend-azure.vercel.app/api/team");
       setTeam(response.data);
     } catch (error) {
       console.error(error);

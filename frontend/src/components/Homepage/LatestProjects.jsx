@@ -9,7 +9,7 @@ export default function LatestProjects() {
   const getProjects = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/random-projects"
+        "https://nebula-backend-azure.vercel.app/api/random-projects"
       );
       setProjects(response.data);
       console.log(response.data);

@@ -33,7 +33,7 @@ export default function Contact() {
       message: data.message,
       subject: data.subject,
     };
-    fetch("http://localhost:3000/api/send-email", {
+    fetch("https://nebula-backend-azure.vercel.app/api/send-email", {
       method: "POST",
       body: JSON.stringify(params),
       headers: {

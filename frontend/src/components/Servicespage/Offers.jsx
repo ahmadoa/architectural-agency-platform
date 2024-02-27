@@ -12,7 +12,7 @@ export default function Offers() {
 
   const getServices = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/services");
+      const response = await axios.get("https://nebula-backend-azure.vercel.app/api/services");
       setServices(response.data);
     } catch (error) {
       console.error(error);

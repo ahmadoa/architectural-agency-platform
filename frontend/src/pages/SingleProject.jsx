@@ -14,7 +14,7 @@ export default function SingleProject() {
   const getProject = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/api/singleProject/${id}`
+        `https://nebula-backend-azure.vercel.app/api/singleProject/${id}`
       );
       console.log(response.data);
       setProject(response.data);

@@ -10,7 +10,7 @@ export default function NextProject({ currentID }) {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/projects");
+        const response = await axios.get("https://nebula-backend-azure.vercel.app/api/projects");
         setProjects(response.data);
 
         const nonMatchingProjects = response.data.filter(
