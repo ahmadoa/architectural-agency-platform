@@ -93,7 +93,7 @@ export default function SingleProject() {
             </motion.div>
           </div>
           <Gallery images={project[0].imgURL} />
-          <NextProject currentID={project[0]._id} />
+          <NextProject currentID={id} />
         </div>
       ) : (
         <div className="h-screen flex items-center justify-center">

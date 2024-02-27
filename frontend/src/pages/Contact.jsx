@@ -4,7 +4,6 @@ import { Textarea } from "@/components/ui/textarea";
 import arrow from "@/assets/arrow.svg";
 import Layout from "@/layout";
 import { motion } from "framer-motion";
-import { useLayoutEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useToast } from "@/components/ui/use-toast";
 import { cn } from "@/lib/utils";
