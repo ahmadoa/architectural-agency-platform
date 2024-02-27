@@ -29,6 +29,7 @@ export default function Team() {
     <section
       ref={parentRef}
       className="relative bg-gradient-to-b from-foreground to-background h-[300vh]"
+      data-cursor="-inverse"
     >
       <div className="sticky top-0 overflow-hidden h-screen py-10 flex justify-between flex-col">
         <div className="px-10">

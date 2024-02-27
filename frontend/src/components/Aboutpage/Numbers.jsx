@@ -16,6 +16,7 @@ export default function Numbers({ theme, setTheme }) {
     <section
       ref={parentRef}
       className="w-full bg-foreground px-10 py-24 flex flex-row"
+      data-cursor="-inverse"
     >
       <motion.div
         style={{ y: title_y }}

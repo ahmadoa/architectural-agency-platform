@@ -16,7 +16,12 @@ export default function Project(props) {
   const img_scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
 
   return (
-    <div ref={innerRef} className="h-[90vh] w-full" style={styles}>
+    <div
+      ref={innerRef}
+      className="h-[90vh] w-full"
+      style={styles}
+      data-cursor="-inverse"
+    >
       <Link to={`/projects/${props._id}`} className="flex flex-col h-full">
         <div className="h-full w-full relative shadow-xl overflow-hidden">
           <motion.img

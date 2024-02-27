@@ -3,11 +3,13 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
-
   return (
     <footer className="flex flex-col">
       <GetInTouch />
-      <div className="h-screen bg-foreground p-10 flex flex-col justify-between">
+      <div
+        className="h-screen bg-foreground p-10 flex flex-col justify-between"
+        data-cursor="-inverse"
+      >
         <div className="flex flex-row justify-between">
           <div className="flex flex-row gap-36">
             <motion.div

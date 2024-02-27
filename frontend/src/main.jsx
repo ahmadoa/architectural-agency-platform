@@ -9,6 +9,7 @@ import Projects from "@/pages/Projects";
 import SingleProject from "@/pages/SingleProject";
 import Contact from "@/pages/Contact";
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>

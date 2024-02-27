@@ -24,7 +24,10 @@ export default function Offers() {
   }, []);
 
   return (
-    <section className="w-full h-fit px-10 py-16 bg-foreground flex flex-row">
+    <section
+      className="w-full h-fit px-10 py-16 bg-foreground flex flex-row"
+      data-cursor="-inverse"
+    >
       <div className="w-1/2 flex flex-col gap-5">
         <h1 className="uppercase text-7xl font-overusedBold text-teal-500">
           What do we offer
@@ -39,9 +42,7 @@ export default function Offers() {
           {services.length > 0 ? (
             services.map((service, index) => (
               <AccordionItem value={`item-${index}`}>
-                <AccordionTrigger>
-                  {service.serviceName}
-                </AccordionTrigger>
+                <AccordionTrigger>{service.serviceName}</AccordionTrigger>
                 <AccordionContent>{service.description}</AccordionContent>
               </AccordionItem>
             ))

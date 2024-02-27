@@ -24,7 +24,7 @@ export default function Gallery({ images }) {
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 0.6]);
 
   return (
-    <section className="w-full">
+    <section className="w-full" data-cursor="-inverse">
       <div
         ref={container}
         className="h-[300vh] flex flex-row p-5 gap-5 overflow-hidden bg-foreground"

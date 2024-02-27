@@ -45,7 +45,10 @@ export default function SingleProject() {
               {project[0].name}
             </motion.h1>
           </div>
-          <div className="h-screen w-full px-10 overflow-hidden">
+          <div
+            className="h-screen w-full px-10 overflow-hidden"
+            data-cursor="-inverse"
+          >
             <motion.img
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

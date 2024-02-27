@@ -38,7 +38,10 @@ export default function LatestProjects() {
   };
 
   return (
-    <div className="h-screen bg-foreground px-10 py-10 flex flex-col gap-16 overflow-hidden">
+    <div
+      className="h-screen bg-foreground px-10 py-10 flex flex-col gap-16 overflow-hidden"
+      data-cursor="-inverse"
+    >
       {projects.length > 0 ? (
         <>
           <motion.div

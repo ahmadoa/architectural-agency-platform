@@ -115,6 +115,7 @@ export default function Contact() {
         <form
           onSubmit={handleSubmit(onSubmit)}
           className=" bg-foreground rounded-3xl flex flex-col gap-5 my-5 p-24 text-white"
+          data-cursor="-inverse"
         >
           <h1 className="font-overusedMedium text-teal-500 text-3xl">
             Brief us on what you need...
