@@ -49,7 +49,7 @@ export default function Services() {
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 1.5, ease: "easeOut" }}
-                className="w-5/6 text-5xl uppercase font-overusedBold text-foreground drop-shadow-xl text-center text-wrap"
+                className="w-5/6 text-5xl uppercase font-overusedBold text-foreground text-center text-wrap"
               >
                 Where Dreams Blossom into Lasting Realities
               </motion.div>

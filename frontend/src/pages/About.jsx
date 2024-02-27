@@ -8,10 +8,9 @@ import Team from "@/components/Aboutpage/Team";
 import GetInTouch from "@/components/GetInTouch";
 
 export default function About() {
-
   useLayoutEffect(() => {
-    window.scrollTo(0, 0)
-});
+    window.scrollTo(0, 0);
+  });
   return (
     <Layout>
       <div className={`w-full flex flex-col`}>
@@ -51,7 +50,7 @@ export default function About() {
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 1.5, ease: "easeOut" }}
-                className="w-5/6 text-5xl uppercase font-overusedBold text-foreground drop-shadow-xl text-center text-wrap"
+                className="w-5/6 text-5xl uppercase font-overusedBold text-foreground text-center text-wrap"
               >
                 Architecture is the art of creating dreams in stone
               </motion.div>

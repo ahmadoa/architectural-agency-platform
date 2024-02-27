@@ -63,7 +63,10 @@ export default function Offering() {
               From meticulous planning to flawless execution, we bring your
               vision to life with exceptional care and expertise.
             </motion.p>
-            <Link className="relative self-start flex flex-row items-center gap-5 overflow-hidden group border-b border-b-white/40">
+            <Link
+              to="/services"
+              className="relative self-start flex flex-row items-center gap-5 overflow-hidden group border-b border-b-white/40"
+            >
               <img
                 src={arrow}
                 className="w-7 group-hover:translate-x-2 stroke-white grayscale invert transition-all duration-500"

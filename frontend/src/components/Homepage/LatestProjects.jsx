@@ -50,15 +50,15 @@ export default function LatestProjects() {
             transition={{ duration: 0.4 }}
             className="flex flex-row justify-between items-end"
           >
-            <div
-              initial={{ x: "-100%", opacity: 0 }}
+            <motion.div
+              initial={{ x: "-30%", opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.4 }}
               className="flex flex-col text-5xl font-overusedBold text-teal-500"
             >
               <h1>Recent</h1>
               <h1>Projects</h1>
-            </div>
+            </motion.div>
             <div className="w-1/3 text-xl font-overusedMedium text-muted/70 ">
               Check out what we've been cooking up lately Our recent projects
               showcase our passion for creativity and dedication to excellence.

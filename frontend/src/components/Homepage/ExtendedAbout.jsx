@@ -69,7 +69,10 @@ export default function Extended() {
               Distinguished by a great sensitivity in seeing and creating beauty
               by constantly reinventing ourselves.
             </motion.p>
-            <Link className="relative self-start flex flex-row items-center gap-5 overflow-hidden group border border-b border-b-foreground/40">
+            <Link
+              to="/about"
+              className="relative self-start flex flex-row items-center gap-5 overflow-hidden group border border-b border-b-foreground/40"
+            >
               <img
                 src={arrow}
                 className="w-7 group-hover:translate-x-2 transition-all duration-500"
