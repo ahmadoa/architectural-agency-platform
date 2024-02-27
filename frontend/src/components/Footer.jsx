@@ -1,9 +1,9 @@
 import GetInTouch from "./GetInTouch";
-import logo from "@/assets/logo.svg";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+
   return (
     <footer className="flex flex-col">
       <GetInTouch />

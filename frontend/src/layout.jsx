@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import { ReactLenis } from "@studio-freight/react-lenis";
 import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 export default function Layout({ children }) {
   return (
@@ -11,6 +12,7 @@ export default function Layout({ children }) {
           {children}
           <Footer />
         </main>
+        <Toaster />
       </ReactLenis>
     </div>
   );

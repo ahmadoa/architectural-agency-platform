@@ -5,12 +5,68 @@ import arrow from "@/assets/arrow.svg";
 import Layout from "@/layout";
 import { motion } from "framer-motion";
 import { useLayoutEffect } from "react";
+import { useForm } from "react-hook-form";
+import { useToast } from "@/components/ui/use-toast";
+import { cn } from "@/lib/utils";
 
 export default function Contact() {
+  const { toast } = useToast();
+  const {
+    register,
+    reset,
+    handleSubmit,
+    formState: { isSubmitted },
+  } = useForm({
+    shouldUseNativeValidation: true,
+    defaultValues: {
+      fullname: "",
+      subject: "",
+      email: "",
+      message: "",
+    },
+  });
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0)
-});
+  // form submit handler & email sender
+  const onSubmit = (data) => {
+    const params = {
+      fullname: data.fullname,
+      email: data.email,
+      message: data.message,
+      subject: data.subject,
+    };
+    fetch("http://localhost:3000/api/send-email", {
+      method: "POST",
+      body: JSON.stringify(params),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => {
+        if (res.ok) {
+          reset();
+          toast({
+            className: cn(
+              "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4"
+            ),
+            title: "Email Sent Successfully!",
+            description:
+              "Thank you for contacting us, we will get back to you.",
+          });
+        }
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error.message);
+        toast({
+          className: cn(
+            "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4"
+          ),
+          title: "Error Sending Email",
+          description: "Please try again later.",
+          status: "error",
+        });
+      });
+  };
+
   return (
     <Layout>
       <div className=" flex flex-col px-10">
@@ -57,7 +113,10 @@ export default function Contact() {
             Let's get started...
           </motion.h1>
         </div>
-        <form className=" bg-foreground rounded-3xl flex flex-col gap-5 my-5 p-24 text-white">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className=" bg-foreground rounded-3xl flex flex-col gap-5 my-5 p-24 text-white"
+        >
           <h1 className="font-overusedMedium text-teal-500 text-3xl">
             Brief us on what you need...
           </h1>
@@ -70,6 +129,7 @@ export default function Contact() {
                   id="fullname"
                   placeholder="Your full name"
                   className="h-14 border-muted/30 placeholder:text-muted-foreground/70 text-lg outline-none placeholder:text-lg focus:border-teal-500 transition-all focus:outline-none"
+                  {...register("fullname", { required: true })}
                 />
               </div>
               <div className="grid w-full max-w-sm items-center gap-3">
@@ -79,6 +139,7 @@ export default function Contact() {
                   id="email"
                   placeholder="Your email address"
                   className="h-14 border-muted/30 text-lg placeholder:text-muted-foreground/70 outline-none placeholder:text-lg focus:border-teal-500 transition-all focus:outline-none"
+                  {...register("email", { required: true })}
                 />
               </div>
               <div className="grid w-full max-w-sm items-center gap-3">
@@ -88,6 +149,7 @@ export default function Contact() {
                   id="subject"
                   placeholder="Subject of your Enquiry"
                   className="h-14 border-muted/30 placeholder:text-muted-foreground/70 text-lg outline-none placeholder:text-lg focus:border-teal-500 transition-all focus:outline-none"
+                  {...register("subject", { required: true })}
                 />
               </div>
             </div>
@@ -98,6 +160,7 @@ export default function Contact() {
                   placeholder="Type your Enquiry here"
                   id="message"
                   className="min-h-96 border-muted/30 placeholder:text-muted-foreground/70 text-lg outline-none placeholder:text-lg focus:border-teal-500 transition-all focus:outline-none"
+                  {...register("message", { required: true })}
                 />
               </div>
             </div>
