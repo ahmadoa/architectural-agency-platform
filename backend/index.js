@@ -7,6 +7,11 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
+app.use(
+  cors({
+    origin: "https://nebula-backend-azure.vercel.app",
+  })
+);
 
 app.use(bodyParser.json());
 
