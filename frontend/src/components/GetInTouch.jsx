@@ -56,7 +56,6 @@ export default function GetInTouch() {
       >
         <Link
           to="/contact"
-          data-cursor-text="Contact Us"
           className=" border-b-[1px] border-t-[1px] overflow-hidden border-foreground/35 py-4 flex flex-row gap-8 group"
         >
           <img
