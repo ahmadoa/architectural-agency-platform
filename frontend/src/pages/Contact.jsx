@@ -69,7 +69,7 @@ export default function Contact() {
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  });
 
   return (
     <Layout>
