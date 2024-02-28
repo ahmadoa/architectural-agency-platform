@@ -1,7 +1,7 @@
 import Layout from "@/layout";
 import HeroIMG from "@/assets/HeroImg.svg";
 import { motion, useScroll, useTransform, cubicBezier } from "framer-motion";
-import { useRef, useLayoutEffect } from "react";
+import { useRef } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import AboutSection from "@/components/Homepage/AboutSection";
 import Extended from "@/components/Homepage/ExtendedAbout";
@@ -16,10 +16,6 @@ function App() {
   });
 
   let y = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
-
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  });
 
   return (
     <Layout>

@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { useToast } from "@/components/ui/use-toast";
 import { cn } from "@/lib/utils";
-import { useLayoutEffect } from "react";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -66,10 +65,6 @@ export default function Contact() {
         });
       });
   };
-
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  });
 
   return (
     <Layout>

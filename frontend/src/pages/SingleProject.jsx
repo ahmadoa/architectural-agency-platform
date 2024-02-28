@@ -1,6 +1,6 @@
 import { useLocation, useParams } from "react-router-dom";
 import Layout from "@/layout";
-import { useEffect, useState, useLayoutEffect } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { urlFor } from "@/lib/sanity";
 import { motion } from "framer-motion";
@@ -26,10 +26,6 @@ export default function SingleProject() {
   useEffect(() => {
     getProject();
   }, []);
-
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  });
 
   return (
     <Layout>

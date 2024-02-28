@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import MouseFollower from "mouse-follower";
 import gsap from "gsap";
 import "./cursor.scss";
+import ScrollToTop from "./lib/scrollToTop";
 
 export default function Layout({ children }) {
   MouseFollower.registerGSAP(gsap);
@@ -26,6 +27,7 @@ export default function Layout({ children }) {
       <ReactLenis root options={{ duration: 3, smoothWheel: true }}>
         <main className="relative ">
           <Navbar />
+          <ScrollToTop />
           {children}
           <Footer />
         </main>

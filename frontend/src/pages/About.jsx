@@ -1,16 +1,11 @@
 import Layout from "@/layout";
 import AboutIMG from "@/assets/About.svg";
-import { useLayoutEffect, useRef, useState } from "react";
-import { cubicBezier, motion, useScroll } from "framer-motion";
+import { cubicBezier, motion } from "framer-motion";
 import TeamValues from "@/components/Aboutpage/TeamValues";
 import Numbers from "@/components/Aboutpage/Numbers";
 import Team from "@/components/Aboutpage/Team";
-import GetInTouch from "@/components/GetInTouch";
 
 export default function About() {
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  });
   return (
     <Layout>
       <div className={`w-full flex flex-col`}>
