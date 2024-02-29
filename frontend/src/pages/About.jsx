@@ -1,5 +1,5 @@
 import Layout from "@/layout";
-import AboutIMG from "@/assets/About.svg";
+import AboutIMG from "@/assets/About.webp";
 import { cubicBezier, motion } from "framer-motion";
 import TeamValues from "@/components/Aboutpage/TeamValues";
 import Numbers from "@/components/Aboutpage/Numbers";

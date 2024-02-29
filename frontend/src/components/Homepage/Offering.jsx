@@ -1,7 +1,7 @@
 import { useScroll, useTransform, motion, cubicBezier } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import greyBuilding from "@/assets/greyBuilding.jpg";
+import greyBuilding from "@/assets/greyBuilding.webp";
 import arrow from "@/assets/arrow.svg";
 
 export default function Offering() {

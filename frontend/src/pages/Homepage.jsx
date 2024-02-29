@@ -1,5 +1,5 @@
 import Layout from "@/layout";
-import HeroIMG from "@/assets/HeroImg.svg";
+import HeroIMG from "@/assets/HeroImg.webp";
 import { motion, useScroll, useTransform, cubicBezier } from "framer-motion";
 import { useRef } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";

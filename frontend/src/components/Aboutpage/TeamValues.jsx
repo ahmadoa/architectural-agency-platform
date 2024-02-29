@@ -1,7 +1,7 @@
 import { motion, useTransform, useScroll, cubicBezier } from "framer-motion";
 import { useRef } from "react";
-import TeamWork from "@/assets/teamwork.svg";
-import Building from "@/assets/building1.svg";
+import TeamWork from "@/assets/teamwork.webp";
+import Building from "@/assets/building1.webp";
 
 export default function TeamValues() {
   const parentRef = useRef(null);

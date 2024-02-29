@@ -1,8 +1,8 @@
 import arrow from "@/assets/arrow.svg";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
-import building2 from "@/assets/building_2.jpg";
-import building3 from "@/assets/building_3.jpg";
+import building2 from "@/assets/building_2.webp";
+import building3 from "@/assets/building_3.webp";
 import { useRef } from "react";
 
 export default function Extended() {

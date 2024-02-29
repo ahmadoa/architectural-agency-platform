@@ -1,5 +1,5 @@
 import Layout from "@/layout";
-import ServicesHero from "@/assets/ServicesHero.svg";
+import ServicesHero from "@/assets/ServicesHero.webp";
 import { cubicBezier, motion } from "framer-motion";
 import Process from "@/components/Servicespage/Process";
 import Offers from "@/components/Servicespage/Offers";

@@ -1,4 +1,4 @@
-import Synergy from "@/assets/synergy.jpg";
+import Synergy from "@/assets/synergy.webp";
 import { Link } from "react-router-dom";
 import arrow from "@/assets/arrow.svg";
 import { useRef } from "react";

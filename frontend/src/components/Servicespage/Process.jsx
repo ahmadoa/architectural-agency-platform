@@ -1,8 +1,8 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
-import completedBuild from "@/assets/completedBuild.svg";
-import render from "@/assets/3drender.svg";
-import Sketch from "@/assets/Sketch.svg";
+import completedBuild from "@/assets/completedBuild.webp";
+import render from "@/assets/3drender.webp";
+import Sketch from "@/assets/Sketch.webp";
 
 export default function Process() {
   const parentRef = useRef();

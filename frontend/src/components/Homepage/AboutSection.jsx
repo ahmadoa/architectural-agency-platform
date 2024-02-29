@@ -1,4 +1,4 @@
-import Harmony from "@/assets/harmony.jpg";
+import Harmony from "@/assets/harmony.webp";
 import { motion, useScroll, useTransform, cubicBezier } from "framer-motion";
 import { useRef } from "react";
 import Paragraph from "@/components/Homepage/AboutParagraph";
