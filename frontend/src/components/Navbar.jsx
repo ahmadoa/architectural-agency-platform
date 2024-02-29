@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 export default function Navbar() {
   const location = useLocation();
   const { pathname } = location;
-  console.log(pathname);
 
   return (
     <nav className="absolute w-full flex flex-col z-50 top-0">

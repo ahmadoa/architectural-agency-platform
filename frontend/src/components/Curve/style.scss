@@ -1,0 +1,20 @@
+.curve{
+    .svg, .background{
+        position: fixed;
+        z-index: 1;
+        height: calc(100vh + 600px);
+        width: 100vw;
+        pointer-events: none;
+        left: 0;
+        top: 0;
+    }
+
+    .svg{
+        fill: hsl(194 87% 12%);
+    }
+
+    .background{
+        background-color: hsl(194 87% 12%);
+        transition: opacity 0s linear 0.1s;
+    }
+}
