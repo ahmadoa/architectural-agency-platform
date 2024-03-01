@@ -36,7 +36,7 @@ export default function Process() {
           transition={{ duration: 1 }}
           className="w-1/2 h-full pt-16 flex justify-center"
         >
-          <h1 className="w-3/4 font-overusedBold text-4xl text-center">
+          <h1 className="w-3/4 font-bold text-4xl text-center">
             We transform initial ideas into awe-inspiring realities
           </h1>
         </motion.div>
@@ -54,7 +54,7 @@ export default function Process() {
               className="w-full h-full object-cover object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-b to-black/0 from-black/40" />
-            <div className="w-1/2 absolute inset-0 top-7 left-7 flex flex-col gap-5 text-xl font-overusedMedium text-primary-foreground">
+            <div className="w-1/2 absolute inset-0 top-7 left-7 flex flex-col gap-5 text-xl font-medium text-primary-foreground">
               <span className="text-sm text-gray-300">01</span>
               <h1>From Blueprint to Brilliance</h1>
             </div>
@@ -78,7 +78,7 @@ export default function Process() {
             />
 
             <div className="absolute inset-0 bg-gradient-to-b to-black/0 from-black/40" />
-            <div className="w-1/2 absolute inset-0 top-7 left-7 flex flex-col gap-5 text-xl font-overusedMedium text-primary-foreground">
+            <div className="w-1/2 absolute inset-0 top-7 left-7 flex flex-col gap-5 text-xl font-medium text-primary-foreground">
               <span className="text-sm text-gray-300">02</span>
               <h1>Where Comfort Meets Style</h1>
             </div>
@@ -91,7 +91,7 @@ export default function Process() {
           transition={{ duration: 1 }}
           className="w-1/2 h-full flex justify-center items-center"
         >
-          <motion.h1 className="pr-20 font-overusedBold text-3xl text-center">
+          <motion.h1 className="pr-20 font-bold text-3xl text-center">
             We curate spaces that reflect your personality and enhance your
             well-being.
           </motion.h1>
@@ -108,7 +108,7 @@ export default function Process() {
           >
             <motion.h1
               style={{ y: title_y_3 }}
-              className="w-2/3 font-overusedBold pt-10 text-4xl text-center"
+              className="w-2/3 font-bold pt-10 text-4xl text-center"
             >
               We design with the future in mind, fostering vibrant and
               sustainable urban environments
@@ -129,7 +129,7 @@ export default function Process() {
               className="w-full h-full object-cover object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-b to-black/0 from-black/40" />
-            <div className="w-1/4 absolute inset-0 top-7 left-7 flex flex-col gap-5 text-xl font-overusedMedium text-primary-foreground">
+            <div className="w-1/4 absolute inset-0 top-7 left-7 flex flex-col gap-5 text-xl font-medium text-primary-foreground">
               <span className="text-sm text-gray-300">03</span>
               <h1>Shaping Sustainable Communities</h1>
             </div>

@@ -14,7 +14,7 @@ export default function GetInTouch() {
   let sy = useTransform(scrollYProgress, [0.1, 1], ["170%", "0%"]);
 
   return (
-    <section className="h-screen flex flex-col justify-between p-10 font-overusedRegular">
+    <section className="h-screen flex flex-col justify-between p-10 ">
       <div ref={ref} className="flex flex-col gap-1">
         <motion.div
           initial={{ opacity: 0 }}
@@ -24,10 +24,7 @@ export default function GetInTouch() {
           Have a question? Contact us
         </motion.div>
         <div className="overflow-hidden mt-16">
-          <motion.div
-            style={{ y }}
-            className="text-8xl font-overusedBold uppercase"
-          >
+          <motion.div style={{ y }} className="text-8xl font-bold uppercase">
             unleash creative
           </motion.div>
         </div>
@@ -35,11 +32,9 @@ export default function GetInTouch() {
         <div className="overflow-hidden">
           <motion.div
             style={{ y: sy }}
-            className="flex flex-row items-center gap-3"
+            className="flex flex-row items-center gap-3 mt-3"
           >
-            <span className="text-8xl font-overusedBold uppercase">
-              Synergy
-            </span>
+            <span className="text-8xl font-bold uppercase">Synergy</span>
             <div className="w-60 h-24 overflow-hidden">
               <img
                 src={Synergy}
@@ -63,10 +58,10 @@ export default function GetInTouch() {
             className="w-14 group-hover:translate-x-2 transition-all duration-500"
           />
           <div className="flex flex-col relative">
-            <span className="text-4xl group-hover:-translate-y-16 transition-all duration-500 font-overusedMedium uppercase">
+            <span className="text-4xl group-hover:-translate-y-16 transition-all duration-500 font-medium uppercase">
               Get in touch
             </span>
-            <span className="text-4xl absolute translate-y-20 group-hover:-translate-y-0 transition-all duration-500 font-overusedMedium uppercase">
+            <span className="text-4xl absolute translate-y-20 group-hover:-translate-y-0 transition-all duration-500 font-medium uppercase">
               Get in touch
             </span>
           </div>

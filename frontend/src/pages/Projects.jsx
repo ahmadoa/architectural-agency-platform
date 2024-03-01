@@ -56,7 +56,7 @@ export default function Projects() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="text-7xl font-overusedBold "
+              className="text-7xl font-bold "
             >
               Case Studies
             </motion.h1>

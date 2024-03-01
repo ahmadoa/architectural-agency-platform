@@ -10,7 +10,9 @@ export default function NextProject({ currentID }) {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get("https://nebula-backend-azure.vercel.app/api/projects");
+        const response = await axios.get(
+          "https://nebula-backend-azure.vercel.app/api/projects"
+        );
         setProjects(response.data);
 
         const nonMatchingProjects = response.data.filter(
@@ -43,10 +45,10 @@ export default function NextProject({ currentID }) {
         >
           <div className="h-1/2 flex px-10 pb-10 items-end justify-end">
             <div className="w-full flex flex-row items-center justify-between">
-              <h1 className="text-7xl font-overusedBold">{nextProject.name}</h1>
+              <h1 className="text-7xl font-bold">{nextProject.name}</h1>
               <button className="flex flex-row gap-1 items-center">
                 <div className="h-1 w-1 bg-foreground" />
-                <span className="uppercase font-overusedMedium">next case</span>
+                <span className="uppercase font-medium">next case</span>
               </button>
             </div>
           </div>

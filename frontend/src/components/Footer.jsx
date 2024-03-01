@@ -16,7 +16,7 @@ export default function Footer() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="flex flex-row gap-3 text-white font-overusedMedium"
+              className="flex flex-row gap-3 text-white font-medium"
             >
               <span className="text-muted/50">01/</span>
               <div className="flex flex-col gap-5">
@@ -53,7 +53,7 @@ export default function Footer() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
-              className="flex flex-row gap-3 text-white font-overusedMedium"
+              className="flex flex-row gap-3 text-white font-medium"
             >
               <span className="text-muted/50">02/</span>
               <div className="flex flex-col gap-5">
@@ -80,7 +80,7 @@ export default function Footer() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
-              className="flex flex-row gap-3 text-white font-overusedMedium"
+              className="flex flex-row gap-3 text-white font-medium"
             >
               <span className="text-muted/50">03/</span>
               <div className="flex flex-col gap-5">
@@ -109,7 +109,7 @@ export default function Footer() {
           >
             <Link
               to="/contact"
-              className="uppercase font-overusedMedium text-primary-foreground relative"
+              className="uppercase font-medium text-primary-foreground relative"
             >
               let's work together
               <div className="absolute w-full h-[2px] bg-primary-foreground" />
@@ -123,20 +123,18 @@ export default function Footer() {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className=" flex flex-row items-center justify-between text-4xl sm:text-7xl md:text-8xl lg:text-10xl"
           >
-            <div className="font-overusedBold text-primary-foreground">
-              NEBULA
-            </div>
-            <div className="self-end font-overusedMedium text-muted-foreground">
+            <div className="font-bold text-primary-foreground">NEBULA</div>
+            <div className="self-end font-medium text-muted-foreground">
               STUDIO
             </div>
             <div className="self-center w-8 h-8 bg-muted-foreground rounded-full" />
           </motion.div>
           <div className="w-full h-[1px] bg-muted/60 my-5" />
           <div className="flex flex-row justify-between">
-            <div className="text-sm font-overusedMedium text-primary-foreground">
+            <div className="text-sm font-medium text-primary-foreground">
               &copy; 2024 NEBULA STUDIO
             </div>
-            <div className="text-sm font-overusedMedium text-primary-foreground">
+            <div className="text-sm font-medium text-primary-foreground">
               Website Made By Ahmad Oulad Aouid &reg;
             </div>
           </div>

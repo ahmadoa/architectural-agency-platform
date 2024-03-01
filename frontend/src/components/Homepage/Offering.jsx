@@ -31,7 +31,7 @@ export default function Offering() {
       ></motion.img>
       <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/40" />
       <div className="absolute inset-0 flex flex-col p-10">
-        <div className="h-1/2 w-1/2 text-6xl font-overusedBold uppercase">
+        <div className="h-1/2 w-1/2 text-6xl font-bold uppercase">
           <motion.div
             initial={{
               opacity: 0,
@@ -58,7 +58,7 @@ export default function Offering() {
               transition={{
                 duration: 0.5,
               }}
-              className="w-[88%] text-3xl capitalize font-overusedMedium"
+              className="w-[88%] text-3xl capitalize font-normal"
             >
               From meticulous planning to flawless execution, we bring your
               vision to life with exceptional care and expertise.
@@ -72,10 +72,10 @@ export default function Offering() {
                 className="w-7 group-hover:translate-x-2 stroke-white grayscale invert transition-all duration-500"
               />
               <div className="flex flex-col relative">
-                <span className="text-xl group-hover:-translate-y-16 transition-all duration-500 font-overusedMedium uppercase">
+                <span className="text-xl group-hover:-translate-y-16 transition-all duration-500 font-medium uppercase">
                   Services
                 </span>
-                <span className="text-xl absolute translate-y-20 group-hover:-translate-y-0 transition-all duration-500 font-overusedMedium uppercase">
+                <span className="text-xl absolute translate-y-20 group-hover:-translate-y-0 transition-all duration-500 font-medium uppercase">
                   Services
                 </span>
               </div>

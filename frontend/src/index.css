@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -65,67 +66,13 @@
     --ring: 24 5.7% 82.9%;
   }
 }
- 
-@font-face {
-  font-family: "OverusedRegular";
-  src: local("OverusedGrotesk-Regular"), url("./fonts/OverusedGrotesk-Regular.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OverusedMedium";
-  src: local("OverusedGrotesk-Medium"), url("./fonts/OverusedGrotesk-Medium.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OverusedBold";
-  src: local("OverusedGrotesk-Bold"), url("./fonts/OverusedGrotesk-Bold.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OverusedLight";
-  src: local("OverusedGrotesk-Light"), url("./fonts/OverusedGrotesk-Light.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OverusedItalic";
-  src: local("OverusedGrotesk-Italic"), url("./fonts/OverusedGrotesk-Italic.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OverusedRoman";
-  src: local("OverusedGrotesk-Roman"), url("./fonts/OverusedGrotesk-Roman.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OverusedBook";
-  src: local("OverusedGrotesk-Book"), url("./fonts/OverusedGrotesk-Book.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face{
-  font-family: "OverusedBlack";
-  src: local("OverusedGrotesk-Black"), url("./fonts/OverusedGrotesk-Black.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OverusedSemiBoldItalic";
-  src: local("OverusedGrotesk-SemiBoldItalic"), url("./fonts/OverusedGrotesk-SemiBoldItalic.ttf") format("truetype");
-  font-display: swap;
-}
 
 @layer base {
   * {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground cursor-none;
+    @apply bg-background text-foreground cursor-none font-Oswald font-light;
   }
   a{
     @apply cursor-none hover:cursor-none ;

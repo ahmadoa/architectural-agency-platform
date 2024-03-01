@@ -29,12 +29,12 @@ function App() {
           <div className="overflow-hidden w-full">
             <motion.div
               initial={{ y: "100%" }}
-              whileInView={{ y: 0 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
               className=" flex flex-row items-center justify-between text-4xl sm:text-7xl md:text-8xl lg:text-10xl"
             >
-              <div className="font-overusedBold">NEBULA</div>
-              <div className="self-end font-overusedMedium text-muted-foreground">
+              <div className="font-bold">NEBULA</div>
+              <div className="self-end font-medium text-muted-foreground">
                 STUDIO
               </div>
               <div className="self-center w-8 h-8 bg-muted-foreground rounded-full" />
@@ -44,44 +44,43 @@ function App() {
           <div className="self-end overflow-hidden">
             <motion.div
               initial={{ y: "100%" }}
-              whileInView={{ y: 0 }}
+              animate={{ y: 0 }}
               transition={{ delay: 1, ease: "easeOut" }}
             >
-              <div className="self-end font-overusedLight">
-                TANGIER, MOROCCO
-              </div>
+              <div className="self-end font-light">TANGIER, MOROCCO</div>
             </motion.div>
           </div>
         </section>
         <div ref={Heroref} className="h-screen relative overflow-hidden">
           <motion.img
-            initial={{
-              opacity: 0,
-              clipPath: "polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%)",
-            }}
-            animate={{
-              opacity: 1,
-              clipPath: "polygon(0% 0%, 100% 0, 100% 100%, 0% 100%)",
-            }}
-            transition={{
-              duration: 0.9,
-              delay: 1.3,
-              ease: cubicBezier(0.83, 0, 0.17, 1),
-            }}
             style={{ y }}
             src={HeroIMG}
-            className="h-full w-full scale-110 object-cover object-center"
+            className="h-full w-full scale-110 object-cover object-center will-change-auto"
           ></motion.img>
           <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/20" />
           <div className="absolute w-1/6 flex flex-col gap-3 left-10 bottom-10 text-secondary">
             <FaQuoteLeft className="text-xl" />
-            <p className="text-sm font-overusedItalic">
+            <p className="text-sm font-light">
               Guided by heritage, inspired by innovation, Nebula Studio crafts a
               tomorrow where every design tells a story of elegance — and
               purpose.
             </p>
             <FaQuoteRight className="self-end text-xl" />
           </div>
+          <motion.div
+            initial={{
+              clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+            }}
+            animate={{
+              clipPath: "polygon(0% 0%, 0% 0, 0% 100%, 0% 100%)",
+            }}
+            transition={{
+              duration: 0.9,
+              delay: 1.3,
+              ease: cubicBezier(0.83, 0, 0.17, 1),
+            }}
+            className="absolute inset-0 bg-background"
+          ></motion.div>
         </div>
         {/* About Section */}
         <AboutSection />

@@ -38,7 +38,7 @@ export default function SingleProject() {
                 initial={{ y: 100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="text-7xl font-overusedBold pl-20"
+                className="text-7xl font-bold pl-20"
               >
                 {project[0].name}
               </motion.h1>
@@ -61,7 +61,7 @@ export default function SingleProject() {
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="flex flex-col font-overusedBold ml-16 pr-24 text-foreground relative"
+                  className="flex flex-col font-bold ml-16 pr-24 text-foreground relative"
                 >
                   <p className="">Lead Designer</p>
                   <p className="">Location</p>
@@ -74,7 +74,7 @@ export default function SingleProject() {
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
-                  className="flex flex-col font-overusedMedium text-muted-foreground relative"
+                  className="flex flex-col font-medium text-muted-foreground relative"
                 >
                   <p className="">{project[0].leaddesigner}</p>
                   <p className="">{project[0].location}</p>
@@ -88,7 +88,7 @@ export default function SingleProject() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
-                className="w-7/12 text-2xl font-overusedMedium pr-10 leading-snug flex flex-wrap text-wrap"
+                className="w-7/12 text-2xl font-medium pr-10 leading-snug flex flex-wrap text-wrap"
               >
                 {project[0].about}
               </motion.div>

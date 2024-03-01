@@ -32,7 +32,7 @@ export default function Project(props) {
           />
 
           <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/30 " />
-          <div className="absolute bottom-5 z-auto left-5 flex flex-col mt-2 text-primary-foreground font-overusedMedium">
+          <div className="absolute bottom-5 z-auto left-5 flex flex-col mt-2 text-primary-foreground font-medium">
             <p className="text-sm text-zinc-300">{props.projectCategory}</p>
             <h3 className="text-xl">{props.name}</h3>
           </div>

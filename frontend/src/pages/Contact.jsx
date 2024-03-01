@@ -77,7 +77,7 @@ export default function Contact() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.4 }}
-                className="w-4/12 uppercase text-lg font-overusedBold text-zinc-500"
+                className="w-4/12 uppercase text-lg font-bold text-zinc-500"
               >
                 Contact
               </motion.h1>
@@ -86,7 +86,7 @@ export default function Contact() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.4, delay: 0.4 }}
-                  className="flex flex-col text-3xl font-overusedBold text-foreground"
+                  className="flex flex-col text-3xl font-bold text-foreground"
                 >
                   <h1> Okay, we've shown (almost) everything.</h1>
                   <h1>Are you ready to chat about our next project?</h1>
@@ -95,7 +95,7 @@ export default function Contact() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.4, delay: 0.7 }}
-                  className="flex flex-col text-xl font-overusedMedium text-muted-foreground/80"
+                  className="flex flex-col text-xl font-medium text-muted-foreground/80"
                 >
                   <h1>Fill out the form below or send us an email at</h1>
                   <h1>
@@ -109,7 +109,7 @@ export default function Contact() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4, delay: 1.1 }}
-              className="text-6xl font-overusedBold mt-10"
+              className="text-6xl font-bold mt-10"
             >
               Let's get started...
             </motion.h1>
@@ -119,7 +119,7 @@ export default function Contact() {
             className=" bg-foreground rounded-3xl flex flex-col gap-5 my-5 p-24 text-white"
             data-cursor="-inverse"
           >
-            <h1 className="font-overusedMedium text-teal-500 text-3xl">
+            <h1 className="font-medium text-teal-500 text-3xl">
               Brief us on what you need...
             </h1>
             <div className="flex flex-row gap-10 mt-10">
@@ -168,7 +168,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="flex flex-row justify-between pt-10">
-              <div className="text-xl text-zinc-400 font-overusedMedium">
+              <div className="text-xl text-zinc-400 font-medium">
                 All set and filled? Email address looking good?
               </div>
               <button className="relative self-start flex flex-row items-center gap-5 overflow-hidden group border-b border-b-white/40 text-teal-500">
@@ -177,10 +177,10 @@ export default function Contact() {
                   className="w-7 group-hover:translate-x-2 stroke-white grayscale invert transition-all duration-500"
                 />
                 <div className="flex flex-col relative">
-                  <span className="text-xl group-hover:-translate-y-16 transition-all duration-500 font-overusedMedium uppercase">
+                  <span className="text-xl group-hover:-translate-y-16 transition-all duration-500 font-medium uppercase">
                     Send
                   </span>
-                  <span className="text-xl absolute translate-y-20 group-hover:-translate-y-0 transition-all duration-500 font-overusedMedium uppercase">
+                  <span className="text-xl absolute translate-y-20 group-hover:-translate-y-0 transition-all duration-500 font-medium uppercase">
                     Send
                   </span>
                 </div>

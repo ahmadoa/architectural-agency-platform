@@ -14,7 +14,7 @@ export default function Navbar() {
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             transition={{ delay: 2, ease: "easeOut" }}
-            className={`flex items-center text-sm font-overusedRegular`}
+            className={`flex items-center text-sm `}
           >
             <img src={Logo} className="w-5" />
           </motion.div>
@@ -24,7 +24,7 @@ export default function Navbar() {
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             transition={{ delay: 2.1, ease: "easeOut" }}
-            className="flex items-center text-sm font-overusedRegular"
+            className="flex items-center text-sm "
           >
             EST
             <span className="w-2 h-[2px] bg-primary" />
@@ -32,7 +32,7 @@ export default function Navbar() {
           </motion.div>
         </motion.div>
         <motion.div
-          className="flex items-center gap-3 text-base font-overusedRegular"
+          className="flex items-center gap-3 text-base "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3, delay: 2.1 }}
@@ -40,9 +40,7 @@ export default function Navbar() {
           <Link to="/" className="overflow-hidden">
             <motion.div
               className={`relative group  ${
-                pathname === "/"
-                  ? "font-overusedBold mb-1"
-                  : "font-overusedMedium mb-1"
+                pathname === "/" ? "font-bold mb-1" : "font-normal mb-1"
               }`}
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
@@ -57,9 +55,7 @@ export default function Navbar() {
           <Link to="/about" className="overflow-hidden">
             <motion.div
               className={`relative group  ${
-                pathname === "/about"
-                  ? "font-overusedBold mb-1"
-                  : "font-overusedMedium mb-1"
+                pathname === "/about" ? "font-bold mb-1" : "font-normal mb-1"
               }`}
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
@@ -73,9 +69,7 @@ export default function Navbar() {
           <Link to="/services" className="overflow-hidden">
             <motion.div
               className={`relative group  ${
-                pathname === "/services"
-                  ? "font-overusedBold mb-1"
-                  : "font-overusedMedium mb-1"
+                pathname === "/services" ? "font-bold mb-1" : "font-normal mb-1"
               }`}
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
@@ -89,9 +83,7 @@ export default function Navbar() {
           <Link to="/projects" className="overflow-hidden">
             <motion.div
               className={`relative group  ${
-                pathname === "/projects"
-                  ? "font-overusedBold mb-1"
-                  : "font-overusedMedium mb-1"
+                pathname === "/projects" ? "font-bold mb-1" : "font-normal mb-1"
               }`}
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
@@ -105,9 +97,7 @@ export default function Navbar() {
           <Link to="/contact" className="overflow-hidden">
             <motion.div
               className={`relative group  ${
-                pathname === "/contact"
-                  ? "font-overusedBold mb-1"
-                  : "font-overusedMedium mb-1"
+                pathname === "/contact" ? "font-bold mb-1" : "font-normal mb-1"
               }`}
               initial={{ y: "100%" }}
               animate={{ y: 0 }}

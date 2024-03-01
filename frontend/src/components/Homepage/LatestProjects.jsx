@@ -54,12 +54,12 @@ export default function LatestProjects() {
               initial={{ x: "-30%", opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.4 }}
-              className="flex flex-col text-5xl font-overusedBold text-teal-500"
+              className="flex flex-col text-5xl font-bold text-teal-500"
             >
               <h1>Recent</h1>
               <h1>Projects</h1>
             </motion.div>
-            <div className="w-1/3 text-xl font-overusedMedium text-muted/70 ">
+            <div className="w-1/3 text-xl font-medium text-muted/70 ">
               Check out what we've been cooking up lately Our recent projects
               showcase our passion for creativity and dedication to excellence.
             </div>
@@ -87,12 +87,10 @@ export default function LatestProjects() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50" />
                     <div className="absolute bottom-5 left-5">
-                      <h1 className="text-sm font-overusedMedium text-muted/60">
+                      <h1 className="text-sm font-medium text-muted/60">
                         {project.projectCategory}
                       </h1>
-                      <h1 className="text-2xl font-overusedBold">
-                        {project.name}
-                      </h1>
+                      <h1 className="text-2xl font-bold">{project.name}</h1>
                     </div>
                   </motion.div>
                 </Link>

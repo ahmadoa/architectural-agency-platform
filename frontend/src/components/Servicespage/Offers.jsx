@@ -12,7 +12,9 @@ export default function Offers() {
 
   const getServices = async () => {
     try {
-      const response = await axios.get("https://nebula-backend-azure.vercel.app/api/services");
+      const response = await axios.get(
+        "https://nebula-backend-azure.vercel.app/api/services"
+      );
       setServices(response.data);
     } catch (error) {
       console.error(error);
@@ -29,10 +31,10 @@ export default function Offers() {
       data-cursor="-inverse"
     >
       <div className="w-1/2 flex flex-col gap-5">
-        <h1 className="uppercase text-7xl font-overusedBold text-teal-500">
+        <h1 className="uppercase text-6xl font-bold text-teal-500">
           What do we offer
         </h1>
-        <p className="w-8/12 text-lg font-overusedMedium text-primary-foreground">
+        <p className="w-8/12 text-lg font-normal text-primary-foreground">
           Unveiling the potential within your space, we offer a comprehensive
           suite of services to bring your vision to life.
         </p>

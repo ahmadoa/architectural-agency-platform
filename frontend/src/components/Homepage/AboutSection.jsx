@@ -26,10 +26,10 @@ export default function AboutSection() {
 
   return (
     <section ref={ref} className="flex flex-col gap-5 px-10">
-      <div className="flex flex-col gap-3 py-20 items-center text-8xl font-overusedBold uppercase">
+      <div className="flex flex-col gap-3 py-20 items-center text-8xl font-bold uppercase">
         <motion.div
           style={{ x: Harmonyx, opacity }}
-          className="font-overusedsemiboldItalic text-6xl"
+          className="font-semibold text-6xl"
         >
           Harmony
         </motion.div>
@@ -48,7 +48,7 @@ export default function AboutSection() {
         <motion.div style={{ x: Designx, opacity }}>Design</motion.div>
       </div>
       <div className="w-full relative">
-        <span className="absolute left-1 top-3 text-sm uppercase text-purple-950 font-overusedMedium">
+        <span className="absolute left-1 top-3 text-sm uppercase text-purple-950 font-medium">
           nebula studio
         </span>
         <Paragraph value={aboutPvalue} />

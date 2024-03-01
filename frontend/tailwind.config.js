@@ -9,17 +9,7 @@ module.exports = {
   ],
   prefix: "",
   theme: {
-    fontFamily: {
-      overusedLight: ["OverusedLight", "sans-serif"],
-      overusedRegular: ["OverusedRegular", "sans-serif"],
-      overusedMedium: ["OverusedMedium", "sans-serif"],
-      overusedBold: ["OverusedBold", "sans-serif"],
-      overusedItalic: ["OverusedItalic", "sans-serif"],
-      overusedRoman: ["OverusedRoman", "sans-serif"],
-      overusedBook: ["OverusedBook", "sans-serif"],
-      overusedBlack: ["OverusedBlack", "sans-serif"],
-      overusedsemiboldItalic: ["OverusedSemiboldItalic", "sans-serif"],
-    },
+    fontFamily: { Oswald: ["Oswald", "sans-serif"] },
     container: {
       center: true,
       padding: "2rem",

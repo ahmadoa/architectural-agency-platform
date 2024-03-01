@@ -18,7 +18,7 @@ export default function Extended() {
     <section className="w-full pt-16 flex flex-col gap-28">
       <div className="flex flex-col px-16">
         {/* row 1 */}
-        <div className="w-full flex flex-row items-center justify-between text-7xl font-overusedBold uppercase">
+        <div className="w-full flex flex-row items-center justify-between text-7xl font-bold uppercase">
           <div className="overflow-hidden">
             <h1>Architects,</h1>
           </div>
@@ -27,7 +27,7 @@ export default function Extended() {
           </div>
         </div>
         {/* row 1 */}
-        <div className="w-full flex flex-row items-center justify-end text-7xl font-overusedBold uppercase">
+        <div className="w-full flex flex-row items-center justify-end text-7xl font-bold uppercase">
           <div className=" overflow-hidden">
             <h1>And creatives</h1>
           </div>
@@ -48,7 +48,7 @@ export default function Extended() {
               }}
               src={building2}
               alt="building 2"
-              className="h-full w-full object-cover object-center"
+              className="h-full w-full object-cover object-center "
             ></motion.img>
           </motion.div>
         </div>
@@ -64,7 +64,7 @@ export default function Extended() {
               transition={{
                 duration: 0.5,
               }}
-              className="w-[88%] text-3xl capitalize font-overusedMedium"
+              className="w-[88%] text-3xl capitalize font-normal"
             >
               Distinguished by a great sensitivity in seeing and creating beauty
               by constantly reinventing ourselves.
@@ -78,10 +78,10 @@ export default function Extended() {
                 className="w-7 group-hover:translate-x-2 transition-all duration-500"
               />
               <div className="flex flex-col relative">
-                <span className="text-xl group-hover:-translate-y-16 transition-all duration-500 font-overusedMedium uppercase">
+                <span className="text-xl group-hover:-translate-y-16 transition-all duration-500 font-medium uppercase">
                   about us
                 </span>
-                <span className="text-xl absolute translate-y-20 group-hover:-translate-y-0 transition-all duration-500 font-overusedMedium uppercase">
+                <span className="text-xl absolute translate-y-20 group-hover:-translate-y-0 transition-all duration-500 font-medium uppercase">
                   about us
                 </span>
               </div>

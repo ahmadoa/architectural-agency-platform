@@ -22,7 +22,7 @@ export default function TeamValues() {
         style={{ y: Lefty }}
         className="w-3/6 h-fit translate-y-96 flex flex-col gap-20"
       >
-        <h1 className="w-2/3 text-6xl leading-[1.1] font-overusedBold text-wrap">
+        <h1 className="w-2/3 text-6xl leading-[1.1] font-bold text-wrap">
           A team driven by passion & ambition
         </h1>
         <div className="h-96 relative">
@@ -72,10 +72,10 @@ export default function TeamValues() {
             ></motion.img>
           </div>
         </div>
-        <div className="self-start w-2/3 pl-10 flex flex-col text-base leading-snug gap-5 font-overusedMedium">
+        <div className="self-start w-2/3 pl-10 flex flex-col text-base leading-snug gap-5 font-normal">
           <p>
-            At <span className="font-overusedBold">Nebula</span> Architectural
-            Agency, ambition and passion fuel our every project. We're a team of
+            At <span className="font-bold">Nebula</span> Architectural Agency,
+            ambition and passion fuel our every project. We're a team of
             talented architects who work efficiently and collaboratively to
             translate your vision into reality. We believe in fostering open
             communication and transparency, ensuring you're involved every step
@@ -87,8 +87,8 @@ export default function TeamValues() {
             your individual needs.
           </p>
           <p>
-            Choose <span className="font-overusedBold">Nebula</span> for our
-            expertise, innovative approach, and client-centric focus. We deliver
+            Choose <span className="font-bold">Nebula</span> for our expertise,
+            innovative approach, and client-centric focus. We deliver
             exceptional value without compromising on quality, making your
             architectural dreams a reality.
           </p>

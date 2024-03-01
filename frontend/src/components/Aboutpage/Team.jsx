@@ -14,7 +14,9 @@ export default function Team() {
 
   const getTeam = async () => {
     try {
-      const response = await axios.get("https://nebula-backend-azure.vercel.app/api/team");
+      const response = await axios.get(
+        "https://nebula-backend-azure.vercel.app/api/team"
+      );
       setTeam(response.data);
     } catch (error) {
       console.error(error);
@@ -33,7 +35,7 @@ export default function Team() {
     >
       <div className="sticky top-0 overflow-hidden h-screen py-10 flex justify-between flex-col">
         <div className="px-10">
-          <h1 className=" w-fit h-fit text-2xl font-overusedBold text-teal-500 py-1 px-3 rounded-full">
+          <h1 className=" w-fit h-fit text-2xl font-bold text-teal-500 py-1 px-3 rounded-full">
             Meet The Team
           </h1>
         </div>
@@ -67,12 +69,8 @@ const Card = ({ name, role, img }) => {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/30"></div>
       <div className="absolute bottom-4 left-4  flex flex-col">
-        <h1 className="text-primary-foreground font-overusedBold text-2xl">
-          {name}
-        </h1>
-        <p className="text-primary-foreground font-overusedMedium text-sm">
-          {role}
-        </p>
+        <h1 className="text-primary-foreground font-bold text-2xl">{name}</h1>
+        <p className="text-primary-foreground font-normal text-sm">{role}</p>
       </div>
     </div>
   );
