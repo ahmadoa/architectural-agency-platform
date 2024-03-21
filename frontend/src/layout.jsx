@@ -23,7 +23,7 @@ export default function Layout({ children }) {
   });
 
   return (
-    <div className="overflow-hidden">
+    <div>
       <ReactLenis root options={{ duration: 3, smoothWheel: true }}>
         <main className="relative ">
           <Navbar />

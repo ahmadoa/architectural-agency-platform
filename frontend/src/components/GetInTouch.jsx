@@ -20,6 +20,7 @@ export default function GetInTouch() {
           initial={{ opacity: 0 }}
           transition={{ duration: 3 }}
           whileInView={{ opacity: 1 }}
+          className="md:text-xl"
         >
           Have a question? Contact us
         </motion.div>

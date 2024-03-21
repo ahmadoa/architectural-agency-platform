@@ -7,11 +7,11 @@ export default function Footer() {
     <footer className="flex flex-col">
       <GetInTouch />
       <div
-        className="h-screen bg-foreground p-10 flex flex-col justify-between"
+        className="h-screen bg-foreground p-5 md:p-10 flex flex-col justify-between"
         data-cursor="-inverse"
       >
-        <div className="flex flex-row justify-between">
-          <div className="flex flex-row gap-36">
+        <div className="flex flex-row flex-wrap-reverse gap-10 md:gap-0 justify-between">
+          <div className="flex flex-row flex-wrap gap-10 md:gap-36 text-sm md:text-base">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -19,9 +19,9 @@ export default function Footer() {
               className="flex flex-row gap-3 text-white font-medium"
             >
               <span className="text-muted/50">01/</span>
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-3 md:gap-5">
                 <h1 className="uppercase">Sitemap</h1>
-                <div className="flex flex-col gap-2 text-muted/50">
+                <div className="flex flex-col gap-1 md:gap-2 text-muted/50">
                   <Link
                     to="/"
                     className="hover:text-primary-foreground transition-all"
@@ -56,9 +56,9 @@ export default function Footer() {
               className="flex flex-row gap-3 text-white font-medium"
             >
               <span className="text-muted/50">02/</span>
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-3 md:gap-5">
                 <h1 className="uppercase">socials</h1>
-                <div className="flex flex-col gap-2 text-muted/50">
+                <div className="flex flex-col gap-1 md:gap-2 text-muted/50">
                   <Link
                     to="https://www.linkedin.com/in/ahmad-ouladaouid"
                     target="_blank"
@@ -83,9 +83,9 @@ export default function Footer() {
               className="flex flex-row gap-3 text-white font-medium"
             >
               <span className="text-muted/50">03/</span>
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-3 md:gap-5">
                 <h1 className="uppercase">infos</h1>
-                <div className="flex flex-col gap-2 text-muted/50">
+                <div className="flex flex-col gap-1 md:gap-2 text-muted/50">
                   <Link
                     to="/"
                     className="hover:text-primary-foreground transition-all"
@@ -121,20 +121,20 @@ export default function Footer() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className=" flex flex-row items-center justify-between text-4xl sm:text-7xl md:text-8xl lg:text-10xl"
+            className=" flex flex-row items-center justify-between text-4xl sm:text-7xl md:text-9xl lg:text-10xl"
           >
             <div className="font-bold text-primary-foreground">NEBULA</div>
             <div className="self-end font-medium text-muted-foreground">
               STUDIO
             </div>
-            <div className="self-center w-8 h-8 bg-muted-foreground rounded-full" />
+            <div className="self-center h-4 w-4 md:w-8 md:h-8 bg-muted-foreground rounded-full" />
           </motion.div>
-          <div className="w-full h-[1px] bg-muted/60 my-5" />
-          <div className="flex flex-row justify-between">
-            <div className="text-sm font-medium text-primary-foreground">
+          <div className="w-full h-[1px] bg-muted/60 my-3 md:my-5" />
+          <div className="flex flex-row justify-end md:justify-between">
+            <div className="hidden md:flex text-xs md:text-sm font-medium text-primary-foreground">
               &copy; 2024 NEBULA STUDIO
             </div>
-            <div className="text-sm font-medium text-primary-foreground">
+            <div className="text-xs md:text-sm font-medium text-primary-foreground">
               Website Made By Ahmad Oulad Aouid &reg;
             </div>
           </div>

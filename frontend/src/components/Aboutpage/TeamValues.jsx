@@ -16,13 +16,13 @@ export default function TeamValues() {
   return (
     <section
       ref={parentRef}
-      className="px-10 py-20 flex flex-row justify-between relative"
+      className="px-5 md:px-10 py-10 md:py-20 flex flex-col md:flex-row justify-between relative overflow-hidden"
     >
       <motion.div
         style={{ y: Lefty }}
-        className="w-3/6 h-fit translate-y-96 flex flex-col gap-20"
+        className="md:w-3/6 h-fit translate-y-96 flex flex-col gap-10 md:gap-20 mb-10 md:mb-0"
       >
-        <h1 className="w-2/3 text-6xl leading-[1.1] font-bold text-wrap">
+        <h1 className="w-2/3 text-2xl md:text-6xl leading-[1.1] font-bold text-wrap">
           A team driven by passion & ambition
         </h1>
         <div className="h-96 relative">
@@ -51,9 +51,9 @@ export default function TeamValues() {
       </motion.div>
       <motion.div
         style={{ y: righty }}
-        className="w-3/6 pl-16 flex flex-col items-center gap-20"
+        className="md:w-3/6 md:pl-16 flex flex-col-reverse md:flex-col mt-40 md:mt-0 items-center gap-20"
       >
-        <div className="relative self-end mr-5 mt-24 h-[28rem] w-4/6">
+        <div className="hidden md:flex relative self-end mr-5 mt-24 h-[28rem] w-full md:w-4/6">
           <div className="absolute w-36 h-20 bg-gradient-to-r from-red-600/80 to-red-600/20 z-50 rounded-b-full bottom-32 -right-14"></div>
           <div className="absolute w-full h-full z-0">
             <motion.img
@@ -72,7 +72,7 @@ export default function TeamValues() {
             ></motion.img>
           </div>
         </div>
-        <div className="self-start w-2/3 pl-10 flex flex-col text-base leading-snug gap-5 font-normal">
+        <div className="self-start md:w-2/3 md:pl-10 flex flex-col text-base leading-snug gap-5 font-normal">
           <p>
             At <span className="font-bold">Nebula</span> Architectural Agency,
             ambition and passion fuel our every project. We're a team of

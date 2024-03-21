@@ -37,7 +37,7 @@ export default function About() {
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
                   transition={{ delay: 1.3, ease: "easeOut" }}
-                  className="font-medium uppercase text-foreground/70"
+                  className="text-sm md:text-base font-medium uppercase text-foreground/70"
                 >
                   unveiling creativity
                 </motion.div>
@@ -47,7 +47,7 @@ export default function About() {
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.5, delay: 1.5, ease: "easeOut" }}
-                  className="w-5/6 text-5xl uppercase font-bold text-foreground text-center text-wrap"
+                  className="w-5/6 text-xl md:text-2xl lg:text-5xl uppercase font-bold text-foreground text-center text-wrap"
                 >
                   Architecture is the art of creating dreams in stone
                 </motion.div>
