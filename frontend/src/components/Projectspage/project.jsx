@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Project(props) {
   const [styles, setStyles] = useState({
-    width: `${Math.floor(Math.random() * 30) + 50}%`, // Distribute vertically
+    width: `${Math.floor(Math.random() * 30) + 60}%`, // Distribute vertically
   });
 
   const innerRef = useRef(null);
@@ -18,7 +18,7 @@ export default function Project(props) {
   return (
     <div
       ref={innerRef}
-      className="h-[90vh] w-full"
+      className="h-80 lg:h-[90vh] w-full"
       style={styles}
       data-cursor="-inverse"
     >

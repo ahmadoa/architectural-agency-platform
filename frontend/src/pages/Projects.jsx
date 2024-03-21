@@ -56,7 +56,7 @@ export default function Projects() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="text-7xl font-bold "
+              className="text-2xl md:text-4xl lg:text-7xl font-bold "
             >
               Case Studies
             </motion.h1>
@@ -66,7 +66,7 @@ export default function Projects() {
               initial={{ y: "60%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5, duration: 1 }}
-              className="w-full flex flex-col gap-10 px-10 pb-10"
+              className="w-full flex flex-col gap-7 md:gap-10 px-5 md:px-10 pb-10"
             >
               {projects.map((project, index) => (
                 <div
