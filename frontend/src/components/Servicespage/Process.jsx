@@ -25,28 +25,28 @@ export default function Process() {
   return (
     <section
       ref={parentRef}
-      className="w-full h-[300vh] flex flex-col gap-20 px-10 pt-16 overflow-hidden"
+      className="w-full h-[250vh] md:h-[300vh] flex flex-col gap-20 md:gap-20 px-5 md:px-10 pt-16 overflow-hidden"
     >
       {/* first part */}
-      <div className="h-1/4 w-full flex flex-row">
+      <div className="h-fit md:h-1/4 w-full flex flex-col md:flex-row justify-center gap-10 md:gap-0">
         <motion.div
           style={{ y: title_y_1 }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="w-1/2 h-full pt-16 flex justify-center"
+          className="md:w-1/2 h-full md:pt-16 flex justify-center"
         >
-          <h1 className="w-3/4 font-bold text-4xl text-center">
+          <h1 className="w-3/4 font-bold md:text-xl lg:text-4xl text-center">
             We transform initial ideas into awe-inspiring realities
           </h1>
         </motion.div>
-        <div className="w-1/2 h-full flex justify-center">
+        <div className="w-2/3 md:w-1/2 h-full flex justify-center">
           <motion.div
             style={{ y: img_y_1 }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
-            className="w-7/12 h-full bg-foreground/50 relative overflow-hidden shadow-2xl"
+            className="md:w-7/12 h-full bg-foreground/50 relative overflow-hidden shadow-2xl"
           >
             <motion.img
               src={Sketch}
@@ -54,7 +54,7 @@ export default function Process() {
               className="w-full h-full object-cover object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-b to-black/0 from-black/40" />
-            <div className="w-1/2 absolute inset-0 top-7 left-7 flex flex-col gap-5 text-xl font-medium text-primary-foreground">
+            <div className="w-1/2 absolute inset-0 top-4 left-4 md:top-7 md:left-7 flex flex-col gap-2 md:gap-5 text-sm md:text-xl font-medium text-primary-foreground">
               <span className="text-sm text-gray-300">01</span>
               <h1>From Blueprint to Brilliance</h1>
             </div>
@@ -62,14 +62,14 @@ export default function Process() {
         </div>
       </div>
       {/* second part */}
-      <div className="h-1/4 w-full flex flex-row">
-        <div className="w-1/2 h-full flex items-end">
+      <div className="h-fit md:h-1/4 w-full flex flex-col-reverse md:flex-row justify-center gap-10 md:gap-0">
+        <div className="w-2/3 md:w-1/2 h-full self-end md:self-start flex items-end">
           <motion.div
             style={{ y: img_y_2 }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
-            className="w-7/12 h-full bg-foreground/50 overflow-hidden relative shadow-2xl"
+            className="md:w-7/12 h-full bg-foreground/50 z-50 overflow-hidden relative shadow-2xl"
           >
             <motion.img
               src={render}
@@ -78,7 +78,7 @@ export default function Process() {
             />
 
             <div className="absolute inset-0 bg-gradient-to-b to-black/0 from-black/40" />
-            <div className="w-1/2 absolute inset-0 top-7 left-7 flex flex-col gap-5 text-xl font-medium text-primary-foreground">
+            <div className="w-1/2 absolute inset-0 top-4 left-4 md:top-7 md:left-7 flex flex-col gap-2 md:gap-5 text-sm md:text-xl font-medium text-primary-foreground">
               <span className="text-sm text-gray-300">02</span>
               <h1>Where Comfort Meets Style</h1>
             </div>
@@ -89,16 +89,16 @@ export default function Process() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="w-1/2 h-full flex justify-center items-center"
+          className="md:w-1/2 h-full flex justify-center items-center font-bold md:pt-16"
         >
-          <motion.h1 className="pr-20 font-bold text-3xl text-center">
+          <motion.h1 className="w-full md:pr-20 font-bold md:text-xl lg:text-4xl text-center">
             We curate spaces that reflect your personality and enhance your
             well-being.
           </motion.h1>
         </motion.div>
       </div>
       {/* third part */}
-      <div className="h-2/4 w-full flex flex-col items-center">
+      <div className="h-2/4 w-full flex flex-col gap-10 md:gap-0 items-center">
         <div className="w-full h-1/4 flex justify-center">
           <motion.div
             initial={{ opacity: 0 }}
@@ -108,7 +108,7 @@ export default function Process() {
           >
             <motion.h1
               style={{ y: title_y_3 }}
-              className="w-2/3 font-bold pt-10 text-4xl text-center"
+              className="w-3/4 font-bold md:pt-10 md:text-xl lg:text-4xl text-center"
             >
               We design with the future in mind, fostering vibrant and
               sustainable urban environments
@@ -120,7 +120,7 @@ export default function Process() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className="w-5/6 h-3/4 flex items-end"
+          className="w-5/6 h-64 md:h-3/4 flex items-end"
         >
           <motion.div className="w-full h-full bg-foreground/50 relative overflow-hidden shadow-2xl">
             <motion.img
@@ -129,7 +129,7 @@ export default function Process() {
               className="w-full h-full object-cover object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-b to-black/0 from-black/40" />
-            <div className="w-1/4 absolute inset-0 top-7 left-7 flex flex-col gap-5 text-xl font-medium text-primary-foreground">
+            <div className="w-1/2 absolute inset-0 top-4 left-4 md:top-7 md:left-7 flex flex-col gap-2 md:gap-5 text-sm md:text-xl font-medium text-primary-foreground">
               <span className="text-sm text-gray-300">03</span>
               <h1>Shaping Sustainable Communities</h1>
             </div>

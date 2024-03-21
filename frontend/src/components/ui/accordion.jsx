@@ -22,7 +22,7 @@ const AccordionTrigger = React.forwardRef(
       <AccordionPrimitive.Trigger
         ref={ref}
         className={cn(
-          "flex flex-1 items-center justify-between py-4 font-medium transition-all [&[data-state=open]>svg]:rotate-45 text-primary-foreground text-2xl group hover:bg-muted-foreground/10",
+          "flex flex-1 items-center justify-between py-3 md:py-4 font-medium transition-all [&[data-state=open]>svg]:rotate-45 text-primary-foreground md:text-2xl group hover:bg-muted-foreground/10",
           className
         )}
         {...props}
@@ -31,7 +31,7 @@ const AccordionTrigger = React.forwardRef(
           {children}
         </div>
 
-        <PlusIcon className="h-5 w-5 shrink-0 text-primary-foreground transition-transform duration-200" />
+        <PlusIcon className="h-5 w-5 shrink-0 text-primary-foreground transition-transform duration-200 mr-1" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   )
@@ -42,14 +42,17 @@ const AccordionContent = React.forwardRef(
   ({ className, children, ...props }, ref) => (
     <AccordionPrimitive.Content
       ref={ref}
-      className="overflow-hidden text-lg data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down text-primary-foreground/50"
+      className="overflow-hidden md:text-lg data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down text-primary-foreground/50"
       {...props}
     >
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className={cn("pb-4 pt-0 px-10 py-5 mb-5 font-light", className)}
+        className={cn(
+          "pb-4 pt-0 px-5 md:px-10 py-5 mb-5 font-light",
+          className
+        )}
       >
         {children}
       </motion.div>
