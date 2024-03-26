@@ -24,7 +24,7 @@ function App() {
         {/* Hero Section */}
         <section
           id="Hero"
-          className="w-full h-120 flex flex-col justify-end py-5 px-10"
+          className="w-full h-120 flex flex-col justify-end py-5 px-5 md:px-10"
         >
           <div className="overflow-hidden w-full">
             <motion.div
@@ -37,7 +37,7 @@ function App() {
               <div className="self-end font-medium text-muted-foreground">
                 STUDIO
               </div>
-              <div className="self-center w-8 h-8 bg-muted-foreground rounded-full" />
+              <div className="self-center w-4 h-4 md:w-8 md:h-8 bg-muted-foreground rounded-full" />
             </motion.div>
           </div>
 
@@ -47,7 +47,9 @@ function App() {
               animate={{ y: 0 }}
               transition={{ delay: 1, ease: "easeOut" }}
             >
-              <div className="self-end font-light">TANGIER, MOROCCO</div>
+              <div className="self-end text-sm md:text-base font-light">
+                TANGIER, MOROCCO
+              </div>
             </motion.div>
           </div>
         </section>
@@ -58,14 +60,14 @@ function App() {
             className="h-full w-full scale-110 object-cover object-center will-change-auto"
           ></motion.img>
           <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/20" />
-          <div className="absolute w-1/6 flex flex-col gap-3 left-10 bottom-10 text-secondary">
-            <FaQuoteLeft className="text-xl" />
+          <div className="absolute w-5/6 md:w-1/6 flex flex-col gap-3 left-5 bottom-5 md:left-10 md:bottom-10 text-secondary">
+            <FaQuoteLeft className="md:text-xl" />
             <p className="text-sm font-light">
               Guided by heritage, inspired by innovation, Nebula Studio crafts a
               tomorrow where every design tells a story of elegance — and
               purpose.
             </p>
-            <FaQuoteRight className="self-end text-xl" />
+            <FaQuoteRight className="self-end md:text-xl" />
           </div>
           <motion.div
             initial={{

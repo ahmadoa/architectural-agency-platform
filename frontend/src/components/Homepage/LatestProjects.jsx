@@ -39,7 +39,7 @@ export default function LatestProjects() {
 
   return (
     <div
-      className="h-screen bg-foreground px-10 py-10 flex flex-col gap-16 overflow-hidden"
+      className="h-[calc(100vh + 200px)] md:h-screen bg-foreground px-5 md:px-10 py-5 md:py-10 flex flex-col gap-8 md:gap-16 overflow-hidden"
       data-cursor="-inverse"
     >
       {projects.length > 0 ? (
@@ -48,18 +48,18 @@ export default function LatestProjects() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.4 }}
-            className="flex flex-row justify-between items-end"
+            className="flex flex-col md:flex-row justify-between gap-3 md:gap-0 items-start md:items-end"
           >
             <motion.div
               initial={{ x: "-30%", opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.4 }}
-              className="flex flex-col text-5xl font-bold text-teal-500"
+              className="flex flex-row md:flex-col gap-1 md:gap-0 md:text-5xl font-bold text-teal-500"
             >
               <h1>Recent</h1>
               <h1>Projects</h1>
             </motion.div>
-            <div className="w-1/3 text-xl font-medium text-muted/70 ">
+            <div className="md:w-1/3 text-sm md:text-xl font-medium text-muted/70 ">
               Check out what we've been cooking up lately Our recent projects
               showcase our passion for creativity and dedication to excellence.
             </div>
@@ -68,14 +68,14 @@ export default function LatestProjects() {
             variants={demoVariants}
             initial="initial"
             whileInView="animate"
-            className="w-full h-full flex flex-row gap-7 text-white"
+            className="w-full h-full flex flex-col md:flex-row gap-3 md:gap-7 text-white"
           >
             {projects.map((project, index) => {
               return (
                 <Link
                   key={project._id}
                   to={`/projects/${project._id}`}
-                  className="w-1/3"
+                  className="md:w-1/3"
                 >
                   <motion.div
                     variants={demoVariants}

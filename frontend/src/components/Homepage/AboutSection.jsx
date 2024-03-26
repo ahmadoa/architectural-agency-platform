@@ -22,23 +22,23 @@ export default function AboutSection() {
   let Designx = useTransform(scrollYProgress, [0.3, 0.5], ["130%", "40%"], {
     ease: cubicBezier(0.33, 1, 0.68, 1),
   });
-  let opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  let opacity = useTransform(scrollYProgress, [0, 0.7], [0, 1]);
 
   return (
-    <section ref={ref} className="flex flex-col gap-5 px-10">
-      <div className="flex flex-col gap-3 py-20 items-center text-8xl font-bold uppercase">
+    <section ref={ref} className="flex flex-col gap-5 px-5 md:px-10">
+      <div className="flex flex-col gap-3 py-20 items-center md:text-8xl font-bold uppercase">
         <motion.div
           style={{ x: Harmonyx, opacity }}
-          className="font-semibold text-6xl"
+          className="font-semibold md:text-6xl"
         >
           Harmony
         </motion.div>
         <motion.div
           style={{ x: Inx, opacity }}
-          className="flex flex-row items-center gap-5"
+          className="flex flex-row items-center gap-3 md:gap-5"
         >
           <span>in</span>
-          <div className="w-52 h-20 overflow-hidden">
+          <div className="w-24 h-8 md:w-52 md:h-20 overflow-hidden">
             <img
               src={Harmony}
               className="w-full h-full object-cover object-center"
@@ -48,7 +48,7 @@ export default function AboutSection() {
         <motion.div style={{ x: Designx, opacity }}>Design</motion.div>
       </div>
       <div className="w-full relative">
-        <span className="absolute left-1 top-3 text-sm uppercase text-purple-950 font-medium">
+        <span className="absolute left-1 md:top-3 text-sm uppercase text-purple-950 font-medium">
           nebula studio
         </span>
         <Paragraph value={aboutPvalue} />

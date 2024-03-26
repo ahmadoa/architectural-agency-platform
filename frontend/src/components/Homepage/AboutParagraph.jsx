@@ -12,7 +12,7 @@ export default function Paragraph({ value }) {
 
   return (
     <div
-      className="text-4xl pb-10 leading-snug max-w-full uppercase flex flex-wrap font-bold"
+      className="text-sm md:text-4xl pb-10 leading-snug max-w-full uppercase flex flex-wrap font-bold"
       ref={element}
     >
       <div className="w-52" />

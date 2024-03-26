@@ -15,10 +15,10 @@ export default function Extended() {
   const pic_2_y = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
 
   return (
-    <section className="w-full pt-16 flex flex-col gap-28">
-      <div className="flex flex-col px-16">
+    <section className="w-full pt-16 flex flex-col gap-14 md:gap-28">
+      <div className="flex flex-col px-5 md:px-16">
         {/* row 1 */}
-        <div className="w-full flex flex-row items-center justify-between text-7xl font-bold uppercase">
+        <div className="w-full flex flex-row items-center justify-between text-xl md:text-4xl lg:text-7xl font-bold uppercase">
           <div className="overflow-hidden">
             <h1>Architects,</h1>
           </div>
@@ -27,14 +27,14 @@ export default function Extended() {
           </div>
         </div>
         {/* row 1 */}
-        <div className="w-full flex flex-row items-center justify-end text-7xl font-bold uppercase">
+        <div className="w-full flex flex-row items-center justify-end text-xl md:text-4xl lg:text-7xl font-bold uppercase">
           <div className=" overflow-hidden">
             <h1>And creatives</h1>
           </div>
         </div>
       </div>
-      <div ref={parentRef} className="flex h-[120vh] flex-row">
-        <div className="w-1/2 flex justify-start">
+      <div ref={parentRef} className="flex h-[120vh] flex-col md:flex-row">
+        <div className="md:w-1/2 flex justify-start">
           <motion.div style={{ y: pic_1_y }} className="w-3/4 h-5/6">
             <motion.img
               initial={{
@@ -52,8 +52,8 @@ export default function Extended() {
             ></motion.img>
           </motion.div>
         </div>
-        <div className="w-1/2 flex flex-col justify-between">
-          <div className="flex flex-col pl-28 gap-10">
+        <div className="md:w-1/2 flex flex-col justify-between">
+          <div className="flex flex-col pl-16 lg:pl-28 gap-10">
             <motion.p
               initial={{
                 opacity: 0,
@@ -64,7 +64,7 @@ export default function Extended() {
               transition={{
                 duration: 0.5,
               }}
-              className="w-[88%] text-3xl capitalize font-normal"
+              className="w-[88%] md:text-3xl capitalize font-normal"
             >
               Distinguished by a great sensitivity in seeing and creating beauty
               by constantly reinventing ourselves.
@@ -90,7 +90,7 @@ export default function Extended() {
           </div>
           <motion.div
             style={{ y: pic_2_y }}
-            className="self-end mr-10 h-5/12 w-3/6"
+            className="hidden md:flex self-end mr-10 h-5/12 w-3/6"
           >
             <motion.img
               initial={{

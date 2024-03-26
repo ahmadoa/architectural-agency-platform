@@ -30,8 +30,8 @@ export default function Offering() {
         className="h-full w-full scale-110 object-cover object-bottom"
       ></motion.img>
       <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/40" />
-      <div className="absolute inset-0 flex flex-col p-10">
-        <div className="h-1/2 w-1/2 text-6xl font-bold uppercase">
+      <div className="absolute inset-0 flex flex-col p-5 md:p-10">
+        <div className="h-1/2 w-1/2 md:text-3xl lg:text-6xl font-bold uppercase">
           <motion.div
             initial={{
               opacity: 0,
@@ -47,7 +47,7 @@ export default function Offering() {
           </motion.div>
         </div>
         <div className="h-1/2 w-full flex text-primary-foreground justify-end items-start">
-          <div className="w-1/2 flex flex-col pl-28 gap-10">
+          <div className="md:w-1/2 flex flex-col pl-16 md:pl-28 gap-5 md:gap-10">
             <motion.p
               initial={{
                 opacity: 0,
@@ -58,7 +58,7 @@ export default function Offering() {
               transition={{
                 duration: 0.5,
               }}
-              className="w-[88%] text-3xl capitalize font-normal"
+              className="md:w-[88%] lg:text-3xl capitalize font-normal"
             >
               From meticulous planning to flawless execution, we bring your
               vision to life with exceptional care and expertise.
