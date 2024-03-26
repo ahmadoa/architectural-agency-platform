@@ -1,7 +1,7 @@
 .curve{
     .svg, .background{
         position: fixed;
-        z-index: 1;
+        z-index: 100;
         height: calc(100vh + 600px);
         width: 100vw;
         pointer-events: none;

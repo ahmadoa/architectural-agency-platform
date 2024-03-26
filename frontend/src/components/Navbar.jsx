@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <nav className="absolute w-full flex flex-col z-50 top-0">
-      <div className="py-3 px-10 flex flex-row items-center justify-between">
+      <div className="py-3 px-5 md:px-10 flex flex-row items-center justify-between">
         <Link to="/" className="overflow-hidden">
           <motion.div
             initial={{ y: "100%" }}
