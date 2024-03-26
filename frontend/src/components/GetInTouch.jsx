@@ -61,13 +61,13 @@ export default function GetInTouch() {
         >
           <img
             src={arrow}
-            className="w-8 md:w-14 group-hover:translate-x-2 transition-all duration-500"
+            className="w-8 md:w-12 lg:w-14 group-hover:translate-x-2 transition-all duration-500"
           />
           <div className="flex flex-col relative">
-            <span className="text-xl md:text-4xl group-hover:-translate-y-16 transition-all duration-500 font-medium uppercase">
+            <span className="text-xl md:text-2xl lg:text-4xl group-hover:-translate-y-16 transition-all duration-500 font-medium uppercase">
               Get in touch
             </span>
-            <span className="text-xl md:text-4xl absolute translate-y-20 group-hover:-translate-y-0 transition-all duration-500 font-medium uppercase">
+            <span className="text-xl md:text-2xl lg:text-4xl absolute translate-y-20 group-hover:-translate-y-0 transition-all duration-500 font-medium uppercase">
               Get in touch
             </span>
           </div>

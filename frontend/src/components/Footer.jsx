@@ -121,7 +121,7 @@ export default function Footer() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className=" flex flex-row items-center justify-between text-4xl sm:text-7xl md:text-9xl lg:text-10xl"
+            className=" flex flex-row items-center justify-between text-4xl sm:text-8xl lg:text-9xl xl:text-10xl"
           >
             <div className="font-bold text-primary-foreground">NEBULA</div>
             <div className="self-end font-medium text-muted-foreground">
