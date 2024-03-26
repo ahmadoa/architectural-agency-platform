@@ -60,6 +60,13 @@ export default function Footer() {
                 <h1 className="uppercase">socials</h1>
                 <div className="flex flex-col gap-1 md:gap-2 text-muted/50">
                   <Link
+                    to="https://github.com/ahmadoa"
+                    target="_blank"
+                    className="hover:text-primary-foreground transition-all"
+                  >
+                    Github
+                  </Link>
+                  <Link
                     to="https://www.linkedin.com/in/ahmad-ouladaouid"
                     target="_blank"
                     className="hover:text-primary-foreground transition-all"
