@@ -149,3 +149,29 @@ $mf-color-text:#fff !default;
         }
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    .mf-cursor {
+        &:before {
+            transform:scale(0);
+        }
+
+        &.-hidden {
+            &:before {
+                transform:scale(0);
+            }
+        }
+
+        &.-inverse {
+            &:before {
+                transform:scale(0);
+            }
+        }
+    
+        &.-exclusion {
+            &:before {
+                transform:scale(0);
+            }
+        }
+    }
+}
