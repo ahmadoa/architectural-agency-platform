@@ -41,18 +41,20 @@ export default function NextProject({ currentID }) {
           to={`/projects/${nextProject._id}`}
           reloadDocument
           preventScrollReset={false}
-          className="h-screen w-full flex flex-col px-10"
+          className="h-96 md:h-screen w-full flex flex-col px-5 md:px-10"
         >
-          <div className="h-1/2 flex px-10 pb-10 items-end justify-end">
+          <div className="h-1/3 md:h-1/2 flex px-5 md:px-10 pb-10 items-end justify-end">
             <div className="w-full flex flex-row items-center justify-between">
-              <h1 className="text-7xl font-bold">{nextProject.name}</h1>
+              <h1 className="text-2xl md:text-7xl font-bold">
+                {nextProject.name}
+              </h1>
               <button className="flex flex-row gap-1 items-center">
                 <div className="h-1 w-1 bg-foreground" />
                 <span className="uppercase font-medium">next case</span>
               </button>
             </div>
           </div>
-          <div className="h-1/2 bg-slate-400">
+          <div className="h-2/3 md:h-1/2 bg-slate-400">
             <img
               src={nextProject.imgURL}
               className="w-full h-full object-cover object-bottom"

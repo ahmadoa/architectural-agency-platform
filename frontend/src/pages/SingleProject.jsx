@@ -38,13 +38,13 @@ export default function SingleProject() {
                 initial={{ y: 100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="text-7xl font-bold pl-20"
+                className="text-3xl lg:text-7xl font-bold md:pl-20"
               >
                 {project[0].name}
               </motion.h1>
             </div>
             <div
-              className="h-screen w-full px-10 overflow-hidden"
+              className="h-80 lg:h-screen w-full px-10 overflow-hidden"
               data-cursor="-inverse"
             >
               <motion.img
@@ -55,40 +55,40 @@ export default function SingleProject() {
                 className="w-full h-full object-cover object-center"
               />
             </div>
-            <div className="w-full flex flex-row px-10 my-10">
-              <div className="w-6/12 flex flex-row mt-1">
+            <div className="w-full flex flex-col lg:flex-row px-5 gap-10 lg:gap-0 lg:px-10 my-10">
+              <div className="lg:w-6/12 flex flex-row mt-1">
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="flex flex-col font-bold ml-16 pr-24 text-foreground relative"
+                  className="flex flex-col font-bold lg:ml-16 pr-10 text-sm md:text-base lg:pr-24 text-foreground relative"
                 >
                   <p className="">Lead Designer</p>
                   <p className="">Location</p>
                   <p className="">Project Category</p>
                   <p className="">Total Land Size</p>
                   <p className="">Status</p>
-                  <div className="absolute bottom-3 h-[1px] w-full bg-slate-500/20" />
+                  <div className="absolute -bottom-3 lg:bottom-3 h-[1px] w-full bg-slate-500/20" />
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
-                  className="flex flex-col font-medium text-muted-foreground relative"
+                  className="flex flex-col font-medium text-sm md:text-base text-muted-foreground relative"
                 >
                   <p className="">{project[0].leaddesigner}</p>
                   <p className="">{project[0].location}</p>
                   <p className="">{project[0].projectCategory}</p>
                   <p className="">{project[0].totalLandSize} sqft</p>
                   <p className="">{project[0].status}</p>
-                  <div className="absolute bottom-3 h-[1px] w-full bg-slate-500/20" />
+                  <div className="absolute -bottom-3 lg:bottom-3 h-[1px] w-full bg-slate-500/20" />
                 </motion.div>
               </div>
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
-                className="w-7/12 text-2xl font-medium pr-10 leading-snug flex flex-wrap text-wrap"
+                className="lg:w-7/12 text-sm md:text-2xl font-medium pr-10 leading-snug flex flex-wrap text-wrap"
               >
                 {project[0].about}
               </motion.div>

@@ -27,7 +27,7 @@ export default function Gallery({ images }) {
     <section className="w-full" data-cursor="-inverse">
       <div
         ref={container}
-        className="h-[300vh] flex flex-row p-5 gap-5 overflow-hidden bg-foreground"
+        className="h-screen md:h-[200vh] lg:h-[300vh] flex flex-row p-5 gap-3 md:gap-5 overflow-hidden bg-foreground"
       >
         <Column images={[images[0], images[1], images[2]]} y={y} />
         <Column images={[images[3], images[4], images[5]]} y={y2} />
@@ -42,7 +42,7 @@ const Column = ({ images, y = 0 }) => {
   return (
     <motion.div
       style={{ y }}
-      className=" w-1/4 min-w-[250px] h-full flex flex-col gap-5 overflow-hidden relative column"
+      className="w-1/4 lg:min-w-[250px] -mt-32 lg:mt-0 h-full flex flex-col gap-3 lg:gap-5 overflow-hidden relative column"
     >
       {images.map((src, index) => {
         return (
